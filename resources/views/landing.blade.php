@@ -25,6 +25,7 @@
     <link href="{{ asset ('frontend/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
     <link href="{{ asset ('frontend/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
     <link href="{{ asset ('frontend/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link href="{{ asset ('css/style.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
     <link href="{{ asset ('frontend/assets/css/style.css') }}" rel="stylesheet">
@@ -62,7 +63,7 @@
         <div class="container d-flex align-items-center justify-content-between">
 
             <div class="logo">
-                <h1><a href="{{ url('/') }}"><img src={{ asset ('frontend/assets/img/pgncom.jpeg') }}></a></h1>
+                <h1><a href="{{ url('/') }}"><img src={{ asset ('frontend/assets/img/pertamina.png') }}></a></h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
@@ -70,9 +71,9 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#features">About</a></li>
-                    {{-- <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+                    {{-- <li><a class="nav-link scrollto" href="#features">About</a></li> --}}
+                    <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+                    {{--  <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li><a class="nav-link scrollto" href="#faq">F.A.Q</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -92,7 +93,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li> --}}
-                    <li><a class="getstarted scrollto">Login</a></li>
+                    <li><a href="{{ route('auth.login') }}" class="getstarted scrollto">Login</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -129,7 +130,7 @@
     <main id="main">
 
         <!-- ======= App Features Section ======= -->
-        <section id="features" class="features">
+        {{-- <section id="features" class="features">
             <div class="container">
 
                 <div class="section-title">
@@ -186,7 +187,7 @@
                 </div>
 
             </div>
-        </section><!-- End App Features Section -->
+        </section><!-- End App Features Section --> --}}
         <!-- ======= Gallery Section ======= -->
         <section id="gallery" class="gallery">
             <div class="container" data-aos="fade-up">
@@ -200,81 +201,86 @@
 
             </div>
 
-            <div class="container-fluid" data-aos="fade-up">
+            {{-- <div class="container-fluid" data-aos="fade-up">
                 <div class="gallery-slider swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-1.png') }}"
-                                class="gallery-lightbox" data-gall="gallery-carousel"><img
-                                    src="{{ asset ('frontend/assets/img/gallery/gallery-1.png') }}" class="img-fluid"
-                                    alt=""></a></div>
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-2.png') }}"
-                                class="gallery-lightbox" data-gall="gallery-carousel"><img
-                                    src="{{ asset ('frontend/assets/img/gallery/gallery-2.png') }}" class="img-fluid"
-                                    alt=""></a></div>
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-3.png') }}"
-                                class="gallery-lightbox" data-gall="gallery-carousel"><img
-                                    src="{{ asset ('frontend/assets/img/gallery/gallery-3.png') }}" class="img-fluid"
-                                    alt=""></a></div>
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-4.png') }}"
-                                class="gallery-lightbox" data-gall="gallery-carousel"><img
-                                    src="{{ asset ('frontend/assets/img/gallery/gallery-4.png') }}" class="img-fluid"
-                                    alt=""></a></div>
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-5.png') }}"
-                                class="gallery-lightbox" data-gall="gallery-carousel"><img
-                                    src="{{ asset ('frontend/assets/img/gallery/gallery-5.png') }}" class="img-fluid"
-                                    alt=""></a></div>
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-6.png') }}"
-                                class="gallery-lightbox" data-gall="gallery-carousel"><img
-                                    src="{{ asset ('frontend/assets/img/gallery/gallery-6.png') }}" class="img-fluid"
-                                    alt=""></a></div>
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-7.png') }}"
-                                class="gallery-lightbox" data-gall="gallery-carousel"><img
-                                    src="{{ asset ('frontend/assets/img/gallery/gallery-7.png') }}" class="img-fluid"
-                                    alt=""></a></div>
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-8.png') }}"
-                                class="gallery-lightbox" data-gall="gallery-carousel"><img
-                                    src="{{ asset ('frontend/assets/img/gallery/gallery-8.png') }}" class="img-fluid"
-                                    alt=""></a></div>
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-9.png') }}"
-                                class="gallery-lightbox" data-gall="gallery-carousel"><img
-                                    src="{{ asset ('frontend/assets/img/gallery/gallery-9.png') }}" class="img-fluid"
-                                    alt=""></a></div>
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-10.png') }}"
-                                class="gallery-lightbox" data-gall="gallery-carousel"><img
-                                    src="{{ asset ('frontend/assets/img/gallery/gallery-10.png') }}" class="img-fluid"
-                                    alt=""></a></div>
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-11.png') }}"
-                                class="gallery-lightbox" data-gall="gallery-carousel"><img
-                                    src="{{ asset ('frontend/assets/img/gallery/gallery-11.png') }}" class="img-fluid"
-                                    alt=""></a></div>
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-12.png') }}"
-                                class="gallery-lightbox" data-gall="gallery-carousel"><img
-                                    src="{{ asset ('frontend/assets/img/gallery/gallery-12.png') }}" class="img-fluid"
-                                    alt=""></a></div>
+                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-1.jpg') }}"
+            class="gallery-lightbox" data-gall="gallery-carousel"><img
+                src="{{ asset ('frontend/assets/img/gallery/gallery-1.jpg') }}" class="img-fluid" alt=""
+                style="width: 500px; height: 300px;"></a></div>
+            <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-2.jpg') }}"
+                    class="gallery-lightbox" data-gall="gallery-carousel"><img
+                        src="{{ asset ('frontend/assets/img/gallery/gallery-2.jpg') }}" class="img-fluid" alt=""
+                        style="width: 300px; height: 300px;"></a></div>
+            <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-3.jpg') }}"
+                    class="gallery-lightbox" data-gall="gallery-carousel"><img
+                        src="{{ asset ('frontend/assets/img/gallery/gallery-3.jpg') }}" class="img-fluid" alt=""
+                        style="width: 300px; height: 300px;"></a></div>
+            <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-4.jpg') }}"
+                    class="gallery-lightbox" data-gall="gallery-carousel"><img
+                        src="{{ asset ('frontend/assets/img/gallery/gallery-4.jpg') }}" class="img-fluid" alt=""
+                        style="width: 300px; height: 300px;"></a></div>
+            <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-5.jpg') }}"
+                    class="gallery-lightbox" data-gall="gallery-carousel"><img
+                        src="{{ asset ('frontend/assets/img/gallery/gallery-5.jpg') }}" class="img-fluid" alt=""
+                        style="width: 300px; height: 300px;"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            </div> --}}
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="{{ asset ('frontend/assets/img/gallery/gallery-1.jpg') }}" alt="">
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="item">
+                        <img src="{{ asset ('frontend/assets/img/gallery/gallery-2.jpg') }}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset ('frontend/assets/img/gallery/gallery-3.jpg') }}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset ('frontend/assets/img/gallery/gallery-4.jpg') }}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset ('frontend/assets/img/gallery/gallery-5.jpg') }}" alt="">
+                    </div>
                 </div>
+                <div class="buttons">
+                    <button id="prev">
+                        <</button> <button id="next">>
+                    </button>
+                </div>
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
 
             </div>
         </section><!-- End Gallery Section -->
     </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    
-        {{-- <div class="footer p-5" style="background: #6496f3">
-            <div class="container p-9">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-lg-3 col-md-8 footer-contact">
-                        <h3 style="font-weight: bold; font-size:24px; color : white">Alamat</h3>
-                        <p style="font-weight: bold; font-size:18px; color : white">
-                            Jl. Sam Ratulangi No.15 Penegahan Raya <br>
-                            Kedaton, Bandar Lampung<br>
-                            35112 <br><br>
-                            <strong>Phone:</strong> 0721787085<br>
-                            <strong>Email:</strong> sales@pgncom.co.id<br>
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-md-8 footer-contact">
+
+    <!-- ======= Footer ======= -->
+
+    <div class="footer p-5" style="background: #6496f3">
+        <div class="container p-9">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8 col-md-10 footer-contact">
+                    <h3 style="font-weight: bold; font-size:24px; color : white">Alamat</h3>
+                    <p style=" font-size:18px; color : white">
+                        Jalan 45, Desa Bandar Agung, Kecamatan Terusan Nunyai <br>
+                        Kabupaten Lampung Tengah, Lampung<br>
+                        34617 <br><br>
+                        Phone:<br>
+                        Email:<br>
+                    </p>
+                </div>
+                {{-- <div class="col-lg-3 col-md-8 footer-contact">
                         <h3 style="font-weight: bold; font-size:24px; color : white">Jam Kerja</h3>
                         <div class="data-row" style="font-weight: bold; font-size:18px; color : white">
                             <div class="label">Senin - Kamis</div>
@@ -286,24 +292,24 @@
                             <div class="colon">:</div>
                             <div>07.30 - 16.30</div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3 style="font-weight: bold; font-size:24px; color : white">Lokasi</h3>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4067439.857184251!2d105.256424!3d-5.400325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db1ac49a6df5%3A0xc7cea81081683bbb!2sKantor%20PGN%20Com%20dan%20Gasnet%20RO%20Lampung!5e0!3m2!1sen!2sid!4v1705908856642!5m2!1sen!2sid"
-                            width="350" height="250" style="border: solid #84545a 2px;border-radius:10px"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                    </div> --}}
+                <div class="col-lg-3 col-md  footer-contact">
+                    <h3 style="font-weight: bold; font-size:24px; color : white">Lokasi</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.916390853986!2d105.19829567497979!3d-4.784370395190963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3f50be72aeb177%3A0xfe7370bbd611fb4!2sSta%20Terbanggi%20Besar%20PGN!5e0!3m2!1sen!2sid!4v1706667624164!5m2!1sen!2sid"
+                        width="450" height="300" style="border:1;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </div> --}}
-        {{-- <div class="footer-top " style="background-color: #446ce7;">
+        </div>
+    </div>
+    {{-- <div class="footer-top " style="background-color: #446ce7;">
             <p style="color: white">Copyright&copy 2023 PGN RO LAMPUNG</p>
         </div> --}}
-{{-- 
+
     <div class="text-center p-1" style="background-color: #446ce7;">
-      <p style="color: white">Copyright&copy 2023 PGN RO LAMPUNG</p>
-    </div> --}}
+        <p style="color: white">Copyright&copy 2024 PGN RO LAMPUNG</p>
+    </div>
 
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
@@ -315,6 +321,7 @@
     <script src="{{ asset ('frontend/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
     <script src="{{ asset ('frontend/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset ('frontend/assets/vendor/php-email-form/validate.js') }}"></script>
+    <script src="{{ asset ('js/app.js') }}"></script>
 
     <!-- Template Main JS File -->
     <script src="{{ asset ('frontend/assets/js/main.js') }}"></script>
