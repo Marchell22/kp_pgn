@@ -49,7 +49,7 @@
     </ul>
 
     <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
+    {{-- <ul class="navbar-nav ml-auto">
       <!-- Navbar Search -->
       <li class="nav-item">
         <a class="nav-link" data-widget="navbar-search" href="#" role="button">
@@ -167,7 +167,7 @@
           <i class="fas fa-th-large"></i>
         </a>
       </li>
-    </ul>
+    </ul> --}}
   </nav>
   <!-- /.navbar -->
 
@@ -222,7 +222,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
-                Kelola Akun
+                Akun
                 <i class="fas fa-angle-left right"></i>
                 {{-- <span class="badge badge-info right">6</span> --}}
               </p>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PGNCOM| Log in </title>
+    <title> Log in </title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -19,7 +19,7 @@
 <style>
     body {
         padding-top: 40px;
-        background-color: #70cce1;
+        background-image: url('/public/frontend/assets/img/gallery/gallery-1.jpg');
     }
 
     .container-fluid {
@@ -114,10 +114,10 @@
     }
 </style>
 
-<body class="hold-transition login-page" style="background: #00ABEC">
+<body class="hold-transition login-page" >
 
 @yield('content')
-
+<script src="{{ asset('js/parallax.js') }}"></script>
 <script src="{{ asset('lte/plugins/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{ asset('lte/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
