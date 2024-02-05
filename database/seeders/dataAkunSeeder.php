@@ -17,7 +17,7 @@ class dataAkunSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'Nama Pengguna',
             'email' => 'pengguna@example.com',
-            'password' => '123',
+            'password' => Hash::make('password'),
             'role' => 'admin',
             // tambahkan kolom dan nilai sesuai kebutuhan
         ]);
