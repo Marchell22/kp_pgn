@@ -12,7 +12,10 @@ class HomeController extends Controller
 {
     public function userDashboard(){
         return view('pegawai.dashboard');
-    }   
+    }
+    public function denahPertama(){
+        return view('pegawai.denahPertama');
+    }        
     public function dashboard(){
         return view('dashboard');
     }

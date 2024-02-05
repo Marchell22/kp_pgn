@@ -56,7 +56,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="{{ route('admin.index') }}" class="nav-link"></a>
+                    
                 </li>
 
             </ul>
@@ -88,13 +88,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="" class="nav-link active ">
+                                    <a href="{{ route('admin.pegawai.dashboard') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">Overview</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.pegawai.denahPertama') }}" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahPertama') }}" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG RECEIVER AREA</p>
                                     </a>
@@ -148,7 +148,7 @@
             <!-- /.sidebar -->
         </aside>
         <div class="content-wrapper">
-            <div class="overview-1-parent">
+            {{-- <div class="overview-1-parent">
                 <img class="overview-1-icon" alt="" src="{{ asset('img/overview.png') }}" />
 
                 <div class="terbanggi-station-besar-parent">
@@ -164,8 +164,8 @@
                     <a href={{ route('admin.pegawai.dashboard') }}><b class="pig-launcher-area">PIG LAUNCHER AREA </b></a>
                 </div>
                 <div class="frame-div">
-                    <a href={{ route('admin.pegawai.denahPertama') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.pegawai.denahPertama') }}><b class="pig-launcher-area">PIG RECEIVER AREA </b></a>
+                    <a href={{ route('admin.pegawai.dashboard') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
+                    <a href={{ route('admin.pegawai.dashboard') }}><b class="pig-launcher-area">PIG RECEIVER AREA </b></a>
                 </div>
                 <div class="terbanggi-station-besar-parent1">
                     <a href={{ route('admin.pegawai.dashboard') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
@@ -175,7 +175,7 @@
                     <a href={{ route('admin.pegawai.dashboard') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
                     <a href={{ route('admin.pegawai.dashboard') }}><b class="slug-catcher-area">PIG RECEIVER AREA CP1 </b></a>
                 </div>
-            </div>
+            </div> --}}
         </div>
 
         @yield('content')

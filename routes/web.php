@@ -38,5 +38,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:admi
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:user'], 'as' => 'admin.'], function(){
     Route::get('/dashboard', [HomeController::class, 'userDashboard'])->name('pegawai.dashboard');
+     Route::get('/denahPertama', [HomeController::class, 'denahPertama'])->name('pegawai.denahPertama');
 });
 
