@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Validator as Validator;
 
 class HomeController extends Controller
 {
+    public function userDashboard(){
+        return view('pegawai.dashboard');
+    }   
     public function dashboard(){
         return view('dashboard');
     }
@@ -34,8 +37,10 @@ class HomeController extends Controller
         $data['email'] =$request->email;
         $data['password'] =Hash::make($request->password);
 
+        $data['role'] = 'user';
+
         User::create($data);
-        return redirect()->route('index');
+        return redirect()->route('admin.index');
 
     }
     public function edit(Request $request, $id){
@@ -57,24 +62,24 @@ class HomeController extends Controller
             $data['password'] =Hash::make($request->password);
         }
         User::whereId($id)->update($data);
-        return redirect()->route('index');
+        return redirect()->route('admin.index');
         
     }
      public function cancelEdit()
     {
         // Logika untuk pembatalan edit
-        return redirect()->route('index'); // Ganti 'index' dengan nama rute yang sesuai
+        return redirect()->route('admin.index'); // Ganti 'index' dengan nama rute yang sesuai
     }
     public function delete($id)
     {
         $user = User::find($id);
 
         if (!$user) {
-            return redirect()->route('index')->with('error', 'User not found');
+            return redirect()->route('admin.index')->with('error', 'User not found');
         }
 
         $user->delete();
 
-        return redirect()->route('index')->with('success', 'User deleted successfully');
+        return redirect()->route('admin.index')->with('success', 'User deleted successfully');
     }
 }

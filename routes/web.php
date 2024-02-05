@@ -20,14 +20,23 @@ use App\Http\Controllers\loginController;
 // });
 Route::get('/',[HomeController::class,'landing'])->name('home');
 
-Route::get('/login',[loginController::class,'login'])->name('auth.login');;
 
-Route::get('/user',[HomeController::class,'index'])->name('index');
-Route::get('/create',[HomeController::class,'create'])->name('user.create');
 
-Route::post('/store',[HomeController::class,'store'])->name('user.store');
+Route::get('/login',[loginController::class,'login'])->name('login');
+Route::post('/login-proses',[loginController::class,'login_proses'])->name('login-proses');
+Route::get('/logout',[loginController::class,'logout'])->name('logout');
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:admin'], 'as' => 'admin.'], function(){
+    Route::get('/user', [HomeController::class, 'index'])->name('index');
+    Route::get('/create', [HomeController::class, 'create'])->name('user.create');
+    Route::post('/store', [HomeController::class, 'store'])->name('user.store');
+    Route::get('/edit/{id}', [HomeController::class, 'edit'])->name('user.edit');
+    Route::put('/update/{id}', [HomeController::class, 'update'])->name('user.update');
+    Route::get('/cancel-edit', [HomeController::class, 'cancelEdit'])->name('user.cancelEdit');
+    Route::delete('/delete/{id}', [HomeController::class, 'delete'])->name('user.delete');
+});
 
-Route::get('/edit/{id}',[HomeController::class,'edit'])->name('user.edit');
-Route::put('/update/{id}',[HomeController::class,'update'])->name('user.update');
-Route::get('/cancel-edit', [HomeController::class, 'cancelEdit'])->name('user.cancelEdit');
-Route::delete('/delete/{id}',[HomeController::class, 'delete'])->name('user.delete');
+
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:user'], 'as' => 'admin.'], function(){
+    Route::get('/dashboard', [HomeController::class, 'userDashboard'])->name('pegawai.dashboard');
+});
+

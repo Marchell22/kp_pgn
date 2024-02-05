@@ -19,7 +19,6 @@
 <style>
     body {
         padding-top: 40px;
-        background-image: url('/public/frontend/assets/img/gallery/gallery-1.jpg');
     }
 
     .container-fluid {
@@ -112,20 +111,21 @@
     .alert {
         margin-bottom: 0;
     }
+
 </style>
 
 <body class="hold-transition login-page" >
 
 @yield('content')
-<script src="{{ asset('js/parallax.js') }}"></script>
+
+
+
 <script src="{{ asset('lte/plugins/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap 4 -->
-<script src="{{ asset('lte/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('lte/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></>
 <!-- AdminLTE App -->
 <script src="{{ asset('lte/dist/js/adminlte.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
-</body>
-
-</html>
+</body
