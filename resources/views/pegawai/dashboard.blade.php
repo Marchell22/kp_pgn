@@ -100,7 +100,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKedua') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG LAUCHER AREA</p>
                                     </a>
@@ -160,8 +160,8 @@
                     <a href={{ route('admin.pegawai.dashboard') }}><b class="pig-launcher-area">SLUG LAUNCHER AREA </b></a>
                 </div>
                 <div class="terbanggi-station-besar-container">
-                    <a href={{ route('admin.pegawai.dashboard') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.pegawai.dashboard') }}><b class="pig-launcher-area">PIG LAUNCHER AREA </b></a>
+                    <a href={{ route('admin.pegawai.denahKedua') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
+                    <a href={{ route('admin.pegawai.denahKedua') }}><b class="pig-launcher-area">PIG LAUNCHER AREA </b></a>
                 </div>
                 <div class="frame-div">
                     <a href={{ route('admin.pegawai.denahPertama') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
@@ -180,10 +180,8 @@
 
         @yield('content')
         <footer class="main-footer">
-            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-            All rights reserved.
+            <strong>Copyright &copy; 2024 <a href="">by PGNCOM</a>.</strong>
             <div class="float-right d-none d-sm-inline-block">
-                <b>Version</b> 3.2.0
             </div>
         </footer>
 

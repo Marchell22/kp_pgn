@@ -15,7 +15,10 @@ class HomeController extends Controller
     }
     public function denahPertama(){
         return view('pegawai.denahPertama');
-    }        
+    }
+    public function denahKedua(){
+        return view('pegawai.denahKedua');
+    }              
     public function dashboard(){
         return view('dashboard');
     }

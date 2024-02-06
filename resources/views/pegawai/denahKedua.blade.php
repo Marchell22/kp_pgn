@@ -8,8 +8,8 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A700" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700" />
-    <link rel="stylesheet" href="{{ asset('css/globalDenahPertama.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/indexDenahPertama.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/globalDenahKedua.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/indexDenahKedua.css') }}" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" />
 
     <!-- Google Font: Source Sans Pro -->
@@ -95,13 +95,13 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.pegawai.denahPertama') }}" class="nav-link active">
+                                    <a href="{{ route('admin.pegawai.denahPertama') }}" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG RECEIVER AREA</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.pegawai.denahKedua') }}" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKedua') }}" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG LAUCHER AREA</p>
                                     </a>
@@ -149,177 +149,217 @@
             <!-- /.sidebar -->
         </aside>
         <div class="content-wrapper">
-            <div class="entahlah-transformed-parent">
-                <img class="entahlah-transformed-icon" alt="" src="{{ asset('img/denahPertama.png') }}" />
-                <div class="pi-1022-wrapper">
-                    <b class="pi-1020b">35-PI-1022</b>
-                </div>
-                <div class="ti-1022-wrapper">
-                    <b class="pi-1020b">35-TI-1022</b>
-                </div>
-                <div class="bv-1022-wrapper">
-                    <b class="bv-1022">35-BV-1022</b>
-                </div>
-                <div class="pt-1031a-wrapper">
-                    <b class="pt-1031a">35-PT-1031A</b>
-                </div>
-                <div class="pt-1031b-wrapper">
-                    <b class="pt-1031a">35-PT-1031B</b>
-                </div>
-                <div class="pt-1031c-wrapper">
-                    <b class="pt-1031a">35-PT-1031C</b>
-                </div>
-                <div class="tt-1020-wrapper">
-                    <b class="tt-1020">35-TT-1020</b>
-                </div>
-                <div class="ti-1020-wrapper">
-                    <b class="tt-1020">35-TI-1020</b>
-                </div>
-                <div class="plv-3005-wrapper">
-                    <b class="pt-1031a">35-PLV-3005</b>
-                </div>
-                <div class="plv-3006-wrapper">
-                    <b class="plv-3006">35-PLV-3006</b>
-                </div>
-                <div class="gtv-1401-wrapper">
-                    <b class="gtv-1401">35-GTV-1401</b>
-                </div>
-                <div class="plv-1401-wrapper">
-                    <b class="plv-3006">35-PLV-1401</b>
-                </div>
-                <div class="plv-1002-wrapper">
-                    <b class="plv-3006">35-PLV-1002</b>
-                </div>
-                <div class="plv-1003-wrapper">
-                    <b class="plv-3006">35-PLV-1003</b>
-                </div>
-                <div class="zsc-1025-wrapper">
-                    <b class="plv-3006">35-ZSC-1025</b>
-                </div>
-                <div class="bv-1401-wrapper">
-                    <b class="gtv-1401">35-BV-1401</b>
-                </div>
-                <div class="bv-1402-wrapper">
-                    <b class="bv-1402">
-                        <p class="p">35</p>
-                        <p class="p">BV</p>
-                        <p class="p">1402</p>
-                    </b>
-                </div>
-                <div class="plv-1401-container">
-                    <b class="plv-3006">35-PLV-1401</b>
-                </div>
-                <div class="psv-1020-wrapper">
-                    <b class="plv-3006">35-PSV-1020</b>
-                </div>
-                <div class="pi-1020b-wrapper">
-                    <b class="pi-1020b">35-PI-1020B</b>
-                </div>
-                <div class="pi-1020b-wrapper">
-                    <b class="pi-1020b">35-PI-1020B</b>
-                </div>
-                <div class="bv-1002-wrapper">
-                    <b class="gtv-1401">35-BV-1002</b>
-                </div>
-                <div class="bv-1002-container">
-                    <b class="gtv-1401">35-BV-1002</b>
-                </div>
-                <div class="zs-1021-wrapper">
-                    <b class="gtv-1401">35-ZS-1021</b>
-                </div>
-                <div class="hcv-1020-wrapper">
-                    <b class="hcv-1020">35-HCV-1020</b>
-                </div>
-                <div class="bv-1002-frame">
-                    <b class="bv-10022">35-BV-1002</b>
-                </div>
-                <div class="bv-1001-wrapper">
-                    <b class="gtv-1401">35-BV-1001</b>
-                </div>
-                <div class="bv-1403-wrapper">
-                    <b class="bv-1403">35-BV-1403</b>
-                </div>
-                <div class="plv-1402-wrapper">
-                    <b class="plv-1402">35-PLV-1402</b>
-                </div>
+            <div class="denahkedua-1-parent">
+                <img class="denahkedua-1-icon" alt="" src="{{ asset('img/denahKedua.png') }}" />
+
                 <div class="blowdown-to-atm-wrapper">
                     <b class="blowdown-to-atm">BLOWDOWN TO ATM</b>
                 </div>
-                <div class="pi-1025-wrapper">
-                    <b class="pi-1025">35-PI-1025</b>
+                <div class="plv-3014-wrapper">
+                    <b class="plv-3014">35-PLV-3014</b>
                 </div>
-                <div class="bv-3002-wrapper">
-                    <b class="bv-3002">35-BV-3002</b>
+                <div class="ft-2030-wrapper">
+                    <b class="ft-2030">35-FT-2030</b>
                 </div>
-                <div class="bv-3001-wrapper">
-                    <b class="bv-3002">35-BV-3001</b>
+                <div class="hcv-2030-wrapper">
+                    <b class="hcv-2030">35-HCV-2030</b>
                 </div>
-                <div class="pt-1021-wrapper">
-                    <b class="bv-3002">35-PT-1021</b>
+                <div class="bv-3019-wrapper">
+                    <b class="bv-3019">35-BV-3019</b>
                 </div>
-                <div class="zs-1020-wrapper">
-                    <b class="bv-3002">35-ZS-1020</b>
+                <div class="plv-3013-wrapper">
+                    <b class="plv-3013">35-PLV-3013</b>
                 </div>
-                <div class="plv-3003-wrapper">
-                    <b class="plv-3003">35-PLV-3003</b>
+                <div class="bv-1407-wrapper">
+                    <b class="bv-3019">35-BV-1407</b>
                 </div>
-                <div class="bv-3005-wrapper">
-                    <b class="plv-3003">35-BV-3005</b>
+                <div class="bv-1302-wrapper">
+                    <b class="bv-3019">35-BV-1302</b>
                 </div>
-                <div class="hcv-1021-wrapper">
-                    <b class="plv-3003">35-HCV-1021</b>
+                <div class="hcv-1327-wrapper">
+                    <b class="hcv-1327">35-HCV-1327</b>
                 </div>
-                <div class="plv-3004-wrapper">
-                    <b class="plv-3003">35-PLV-3004</b>
+                <div class="bv-1408-wrapper">
+                    <b class="bv-3019">35-BV-1408</b>
                 </div>
-                <div class="bv-3006-wrapper">
-                    <b class="plv-3003">35-BV-3006</b>
+                <div class="bv-1303-wrapper">
+                    <b class="bv-3019">35-BV-1303</b>
                 </div>
-                <div class="frame-div">
-                    <b class="bv-10023">35-BV-1002</b>
-                </div>
-                <div class="bv-1002-wrapper1">
-                    <b class="bv-10023">35-BV-1002</b>
-                </div>
-                <div class="plv-1001-wrapper">
-                    <b class="plv-3006">35-PLV-1001</b>
-                </div>
-                <div class="pi-1020a-wrapper">
-                    <b class="pi-1020b">35-PI-1020A</b>
-                </div>
-                <div class="r-1020-wrapper">
-                    <b class="r-1020">35-R-1020</b>
-                </div>
-                <div class="vent-atm-wrapper">
-                    <b class="vent-atm">
-                        <p class="p">VENT</p>
-                        <p class="p">ATM</p>
+                <div class="from-slug-catcher-35-v-2130-wrapper">
+                    <b class="from-pig-launcher-37-r-1020-container">
+                        <span class="from-slug-catcher-35-v-2130-tx-container">
+                            <p class="from-slug">FROM SLUG</p>
+                            <p class="from-slug">CATCHER</p>
+                            <p class="from-slug">35-V-2130</p>
+                        </span>
                     </b>
                 </div>
-                <div class="to-sump-tank-parent">
-                    <b class="to-sump-tank">TO SUMP TANK</b>
-                    <b class="v-2140">35-V-2140</b>
+                <div class="tp-3560-wrapper">
+                    <b class="tp-3560">
+                        <span class="tp-3560-txt">
+                            <p class="from-slug">TP</p>
+                            <p class="from-slug">3560</p>
+                        </span>
+                    </b>
                 </div>
-                <div class="to-sump-tank-parent">
-                    <b class="to-sump-tank">TO SUMP TANK</b>
-                    <b class="v-2140">35-V-2140</b>
+                <div class="tp-3350-wrapper">
+                    <b class="tp-3560">
+                        <span class="tp-3560-txt">
+                            <p class="from-slug">TP</p>
+                            <p class="from-slug">3350</p>
+                        </span>
+                    </b>
                 </div>
-                <div class="to-pig-launcher-parent">
-                    <b class="to-pig-launcher">TO PIG LAUNCHER</b>
-                    <b class="l-1320">35-L-1320</b>
+                <div class="to-slug-catcher-35-v2130-wrapper">
+                    <b class="from-pig-launcher-37-r-1020-container">
+                        <span class="from-slug-catcher-35-v-2130-tx-container">
+                            <p class="from-slug">TO SLUG</p>
+                            <p class="from-slug">CATCHER</p>
+                            <p class="from-slug">35-V-2130</p>
+                        </span>
+                    </b>
                 </div>
-                <div class="plv-3010-wrapper">
-                    <b class="plv-3006">35-PLV-3010</b>
+                <div class="from-pig-launcher-37-r-1020-wrapper">
+                    <b class="from-pig-launcher-37-r-1020-container">
+                        <span class="from-slug-catcher-35-v-2130-tx-container">
+                            <p class="from-slug">FROM PIG LAUNCHER</p>
+                            <p class="from-slug">37-R-1020</p>
+                        </span>
+                    </b>
+                </div>
+                <div class="to-pig-receiver-35-r-1020-wrapper">
+                    <b class="from-pig-launcher-37-r-1020-container">
+                        <span class="from-slug-catcher-35-v-2130-tx-container">
+                            <p class="from-slug">TO PIG RECEIVER</p>
+                            <p class="from-slug">35-R-1020</p>
+                        </span>
+                    </b>
+                </div>
+                <div class="future-connection-for-add-gas-wrapper">
+                    <b class="future-connection-for-add-container">
+                        <span class="from-slug-catcher-35-v-2130-tx-container">
+                            <p class="from-slug ">FUTURE</p>
+                            <p class="from-slug">CONNECTION</p>
+                            <p class="from-slug">FOR ADD GAS</p>
+                            <p class="from-slug">COMPROSSER</p>
+                        </span>
+                    </b>
+                </div>
+                <div class="gas-engine-generator-wrapper">
+                    <b class="gas-engine-generator">
+                        <span class="from-slug-catcher-35-v-2130-tx-container">
+                            <p class="from-slug">GAS ENGINE</p>
+                            <p class="from-slug">GENERATOR</p>
+                        </span>
+                    </b>
+                </div>
+                <div class="bv-2001-wrapper">
+                    <b class="bv-3019">35-BV-2001</b>
+                </div>
+                <div class="bv-3013-wrapper">
+                    <b class="bv-3019">35-BV-3013</b>
                 </div>
                 <div class="plv-3009-wrapper">
-                    <b class="plv-3009">35-PLV-3009</b>
+                    <b class="plv-3013">35-PLV-3009</b>
                 </div>
-                <div class="sdv-1023-wrapper">
-                    <b class="plv-3009">35-SDV-1023</b>
+                <div class="plv-3010-wrapper">
+                    <b class="plv-3013">35-PLV-3010</b>
                 </div>
-                <div class="from-pig-launcher-parent">
-                    <b class="from-pig-launcher">FROM PIG LAUNCHER</b>
-                    <b class="l-13201">33-L-1320</b>
+                <div class="hcv-1325-wrapper">
+                    <b class="hcv-1327">35-HCV-1325</b>
+                </div>
+                <div class="bv-1301-wrapper">
+                    <b class="bv-1301">35-BV-1301</b>
+                </div>
+                <div class="bv-1304-wrapper">
+                    <b class="bv-1301">35-BV-1304</b>
+                </div>
+                <div class="hcv-1324-wrapper">
+                    <b class="hcv-1324">35-HCV-1324</b>
+                </div>
+                <div class="plv-3011-wrapper">
+                    <b class="plv-3011">35-PLV-3011</b>
+                </div>
+                <div class="bv-3015-wrapper">
+                    <b class="bv-3015">35-BV-3015</b>
+                </div>
+                <div class="bv-3016-wrapper">
+                    <b class="bv-3016">35-BV-3016</b>
+                </div>
+                <div class="bv-1302-container">
+                    <b class="bv-3016">35-BV-1302</b>
+                </div>
+                <div class="bv-1326-wrapper">
+                    <b class="bv-3016">35-BV-1326</b>
+                </div>
+                <div class="plv-3012-wrapper">
+                    <b class="plv-3012">35-PLV-3012</b>
+                </div>
+                <div class="bv-1322-wrapper">
+                    <b class="bv-1322">35-BV-1322</b>
+                </div>
+                <div class="plv-2101-wrapper">
+                    <b class="plv-3012">35-PLV-2101</b>
+                </div>
+                <div class="bv-2101-wrapper">
+                    <b class="bv-1322">35-BV-2101</b>
+                </div>
+                <div class="plv-2103-wrapper">
+                    <b class="plv-2103">35-PLV-2103</b>
+                </div>
+                <div class="plv-1303-wrapper">
+                    <b class="plv-2103">35-PLV-1303</b>
+                </div>
+                <div class="zsc-1320-wrapper">
+                    <b class="plv-2103">35-ZSC-1320</b>
+                </div>
+                <div class="psv-1405-wrapper">
+                    <b class="plv-2103">35-PSV-1405</b>
+                </div>
+                <div class="bv-1404-wrapper">
+                    <b class="bv-3015">35-BV-1404</b>
+                </div>
+                <div class="psv-1403-wrapper">
+                    <b class="plv-2103">35-PSV-1403</b>
+                </div>
+                <div class="psv-1320-wrapper">
+                    <b class="plv-2103">35-PSV-1320</b>
+                </div>
+                <div class="pi-1320a-wrapper">
+                    <b class="pi-1320a">35-PI-1320A</b>
+                </div>
+                <div class="pi-1320b-wrapper">
+                    <b class="pi-1320a">35-PI-1320B</b>
+                </div>
+                <div class="l-1320-wrapper">
+                    <b class="l-1320">35-L-1320</b>
+                </div>
+                <div class="bv-1301-container">
+                    <b class="bv-13011">35-BV-1301</b>
+                </div>
+                <div class="zs-1320-wrapper">
+                    <b class="bv-1301">35-ZS-1320</b>
+                </div>
+                <div class="plv-1404-wrapper">
+                    <b class="l-1320">35-PLV-1404</b>
+                </div>
+                <div class="pi-1328-wrapper">
+                    <b class="bv-1322">35-PI-1328</b>
+                </div>
+                <div class="pt-1322-wrapper">
+                    <b class="bv-1322">35-PT-1322</b>
+                </div>
+                <div class="zs-1310-wrapper">
+                    <b class="bv-13011">35-ZS-1310</b>
+                </div>
+                <div class="plv-1406-wrapper">
+                    <b class="plv-1406">35-PLV-1406</b>
+                </div>
+                <div class="plv-3014-container">
+                    <b class="plv-30141">35-PLV-3014</b>
+                </div>
+                <div class="plv-3020-wrapper">
+                    <b class="plv-3014">35-PLV-3020</b>
                 </div>
             </div>
         </div>

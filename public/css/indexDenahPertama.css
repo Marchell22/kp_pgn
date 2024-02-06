@@ -1,0 +1,648 @@
+.entahlah-transformed-icon {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 1264.1px;
+    height: 513px;
+    object-fit: cover;
+}
+
+.pi-1022-wrapper,
+.ti-1022-wrapper {
+    position: absolute;
+    top: 439px;
+    left: 481px;
+    background-color: var(--color-silver-100);
+    width: 44px;
+    height: 9px;
+    overflow: hidden;
+}
+
+.ti-1022-wrapper {
+    top: 440px;
+    left: 544px;
+}
+
+.bv-1022,
+.bv-1022-wrapper {
+    position: absolute;
+    height: 11px;
+}
+
+.bv-1022 {
+    top: 2px;
+    left: 6px;
+    display: inline-block;
+    width: 49px;
+}
+
+.bv-1022-wrapper {
+    top: 353px;
+    left: 478px;
+    background-color: var(--color-silver-100);
+    width: 53px;
+    overflow: hidden;
+}
+
+.pt-1031a {
+    position: absolute;
+    top: 1px;
+    left: 2px;
+}
+
+.pt-1031a-wrapper,
+.pt-1031b-wrapper,
+.pt-1031c-wrapper {
+    position: absolute;
+    top: 445px;
+    left: 607px;
+    background-color: var(--color-silver-100);
+    width: 55px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.pt-1031b-wrapper,
+.pt-1031c-wrapper {
+    left: 675px;
+}
+
+.pt-1031c-wrapper {
+    left: 740px;
+}
+
+.tt-1020 {
+    position: absolute;
+    top: 1px;
+    left: 5px;
+}
+
+.plv-3005-wrapper,
+.ti-1020-wrapper,
+.tt-1020-wrapper {
+    position: absolute;
+    top: 445px;
+    left: 805px;
+    background-color: var(--color-silver-100);
+    width: 55px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.plv-3005-wrapper,
+.ti-1020-wrapper {
+    top: 439px;
+    left: 856px;
+}
+
+.plv-3005-wrapper {
+    top: 435px;
+    left: 911px;
+}
+
+.plv-3006 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.plv-3006-wrapper {
+    position: absolute;
+    top: 436px;
+    left: 1053px;
+    background-color: var(--color-silver-100);
+    width: 54px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.gtv-1401 {
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+.bv-1401-wrapper,
+.gtv-1401-wrapper,
+.plv-1002-wrapper,
+.plv-1003-wrapper,
+.plv-1401-wrapper,
+.zsc-1025-wrapper {
+    position: absolute;
+    top: 306px;
+    left: 1085px;
+    background-color: var(--color-silver-100);
+    width: 54px;
+    height: 13px;
+    overflow: hidden;
+}
+
+.bv-1401-wrapper,
+.plv-1002-wrapper,
+.plv-1003-wrapper,
+.plv-1401-wrapper,
+.zsc-1025-wrapper {
+    top: 260px;
+    left: 1086px;
+}
+
+.bv-1401-wrapper,
+.plv-1002-wrapper,
+.plv-1003-wrapper,
+.zsc-1025-wrapper {
+    top: 299px;
+    left: 995px;
+}
+
+.bv-1401-wrapper,
+.plv-1003-wrapper,
+.zsc-1025-wrapper {
+    top: 255px;
+    left: 923px;
+}
+
+.bv-1401-wrapper,
+.zsc-1025-wrapper {
+    top: 214px;
+    left: 1112px;
+}
+
+.bv-1401-wrapper {
+    top: 175px;
+    left: 1087px;
+    height: 12px;
+}
+
+.p {
+    margin: 0;
+}
+
+.bv-1402 {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.bv-1402-wrapper,
+.plv-1401-container,
+.psv-1020-wrapper {
+    position: absolute;
+    background-color: var(--color-silver-100);
+    overflow: hidden;
+}
+
+.bv-1402-wrapper {
+    top: 165px;
+    left: 1033px;
+    width: 29px;
+    height: 30px;
+    text-align: left;
+}
+
+.plv-1401-container,
+.psv-1020-wrapper {
+    top: 136px;
+    left: 1087px;
+    width: 54px;
+    height: 10px;
+}
+
+.psv-1020-wrapper {
+    top: 116px;
+    left: 968px;
+}
+
+.pi-1020b {
+    position: absolute;
+    top: 0;
+    left: 1px;
+}
+
+.bv-1002-container,
+.bv-1002-wrapper,
+.pi-1020b-wrapper,
+.zs-1021-wrapper {
+    position: absolute;
+    top: 150px;
+    left: 933px;
+    background-color: var(--color-silver-100);
+    width: 54px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.bv-1002-container,
+.bv-1002-wrapper,
+.zs-1021-wrapper {
+    top: 182px;
+    left: 735px;
+}
+
+.bv-1002-container,
+.zs-1021-wrapper {
+    top: 204px;
+}
+
+.zs-1021-wrapper {
+    top: 237px;
+    left: 795px;
+}
+
+.hcv-1020 {
+    position: absolute;
+    top: 0;
+    left: -1px;
+}
+
+.hcv-1020-wrapper {
+    position: absolute;
+    top: 241px;
+    left: 647px;
+    background-color: var(--color-silver-100);
+    width: 54px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.bv-10022 {
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+
+.bv-1001-wrapper,
+.bv-1002-frame {
+    position: absolute;
+    top: 241px;
+    left: 531px;
+    background-color: var(--color-silver-100);
+    width: 54px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.bv-1001-wrapper {
+    top: 232px;
+    left: 436px;
+}
+
+.bv-1403,
+.bv-1403-wrapper {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+}
+
+.bv-1403-wrapper {
+    top: 170px;
+    left: 391px;
+    background-color: var(--color-silver-100);
+    width: 54px;
+    height: 16px;
+    overflow: hidden;
+}
+
+.plv-1402 {
+    position: absolute;
+    top: 4px;
+    left: 1px;
+}
+
+.plv-1402-wrapper {
+    position: absolute;
+    top: 132px;
+    left: 391px;
+    background-color: var(--color-silver-100);
+    width: 54px;
+    height: 16px;
+    overflow: hidden;
+}
+
+.blowdown-to-atm {
+    position: absolute;
+    top: 4px;
+    left: -11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 108px;
+}
+
+.blowdown-to-atm-wrapper {
+    position: absolute;
+    top: 100px;
+    left: 392px;
+    background-color: var(--color-silver-100);
+    width: 89px;
+    height: 16px;
+    overflow: hidden;
+}
+
+.pi-1025,
+.pi-1025-wrapper {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.pi-1025-wrapper {
+    top: 154px;
+    left: 305px;
+    background-color: var(--color-silver-100);
+    width: 54px;
+    height: 16px;
+    overflow: hidden;
+}
+
+.bv-3002 {
+    position: absolute;
+    top: 2px;
+    left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+}
+
+.bv-3001-wrapper,
+.bv-3002-wrapper,
+.pt-1021-wrapper,
+.zs-1020-wrapper {
+    position: absolute;
+    top: 196px;
+    left: 333px;
+    background-color: var(--color-silver-100);
+    width: 48px;
+    height: 11px;
+    overflow: hidden;
+}
+
+.bv-3001-wrapper,
+.pt-1021-wrapper,
+.zs-1020-wrapper {
+    top: 197px;
+    left: 263px;
+}
+
+.pt-1021-wrapper,
+.zs-1020-wrapper {
+    top: 160px;
+    left: 235px;
+}
+
+.zs-1020-wrapper {
+    top: 237px;
+    left: 158px;
+}
+
+.plv-3003 {
+    position: absolute;
+    top: -3px;
+    left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 14px;
+}
+
+.bv-3005-wrapper,
+.bv-3006-wrapper,
+.hcv-1021-wrapper,
+.plv-3003-wrapper,
+.plv-3004-wrapper {
+    position: absolute;
+    top: 278px;
+    left: 266px;
+    background-color: var(--color-silver-100);
+    width: 54px;
+    height: 13px;
+    overflow: hidden;
+}
+
+.bv-3005-wrapper,
+.bv-3006-wrapper,
+.hcv-1021-wrapper,
+.plv-3004-wrapper {
+    top: 309px;
+    left: 303px;
+}
+
+.bv-3006-wrapper,
+.hcv-1021-wrapper,
+.plv-3004-wrapper {
+    top: 356px;
+    left: 292px;
+}
+
+.bv-3006-wrapper,
+.plv-3004-wrapper {
+    top: 396px;
+    left: 266px;
+}
+
+.bv-3006-wrapper {
+    top: 429px;
+    left: 303px;
+}
+
+.bv-10023 {
+    position: absolute;
+    top: 3px;
+    left: 9px;
+}
+
+.bv-1002-wrapper1,
+.frame-div,
+.pi-1020a-wrapper,
+.plv-1001-wrapper {
+    position: absolute;
+    top: 181px;
+    left: 553px;
+    background-color: var(--color-silver-100);
+    width: 56px;
+    height: 15px;
+    overflow: hidden;
+}
+
+.bv-1002-wrapper1,
+.pi-1020a-wrapper,
+.plv-1001-wrapper {
+    top: 201px;
+}
+
+.pi-1020a-wrapper,
+.plv-1001-wrapper {
+    top: 276px;
+    left: 781px;
+}
+
+.pi-1020a-wrapper {
+    top: 170px;
+    left: 933px;
+}
+
+.r-1020,
+.r-1020-wrapper {
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+.r-1020-wrapper {
+    top: 211px;
+    left: 1010px;
+    background-color: #fffdc0;
+    width: 55px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.vent-atm {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    white-space: pre-wrap;
+}
+
+.vent-atm-wrapper {
+    position: absolute;
+    top: 86px;
+    left: 1087px;
+    background-color: var(--color-silver-100);
+    width: 54px;
+    height: 27px;
+    overflow: hidden;
+    font-size: var(--font-size-3xs);
+}
+
+.to-sump-tank,
+.v-2140 {
+    position: absolute;
+    top: -2px;
+    left: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+}
+
+.v-2140 {
+    top: 9px;
+    left: 1px;
+    font-size: var(--font-size-5xs);
+    width: 48px;
+}
+
+.to-sump-tank-parent {
+    position: absolute;
+    top: 378px;
+    left: 1127px;
+    background-color: var(--color-lightsteelblue);
+    width: 82px;
+    height: 23px;
+    overflow: hidden;
+    font-size: var(--font-size-3xs);
+}
+
+.l-1320,
+.to-pig-launcher {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97px;
+}
+
+.l-1320 {
+    top: 12px;
+    left: 1px;
+    font-size: var(--font-size-5xs);
+    width: 48px;
+}
+
+.to-pig-launcher-parent {
+    position: absolute;
+    top: 463px;
+    left: 1122px;
+    background-color: var(--color-lightsteelblue);
+    width: 93px;
+    height: 23px;
+    overflow: hidden;
+    font-size: var(--font-size-3xs);
+}
+
+.plv-3010-wrapper {
+    position: absolute;
+    top: 451px;
+    left: 1053px;
+    background-color: var(--color-silver-100);
+    width: 54px;
+    height: 14px;
+    overflow: hidden;
+}
+
+.plv-3009 {
+    position: absolute;
+    top: -1px;
+    left: 2px;
+}
+
+.plv-3009-wrapper,
+.sdv-1023-wrapper {
+    position: absolute;
+    top: 454px;
+    left: 911px;
+    background-color: var(--color-silver-100);
+    width: 55px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.sdv-1023-wrapper {
+    top: 490px;
+    left: 981px;
+}
+
+.from-pig-launcher,
+.l-13201 {
+    position: absolute;
+    top: -3px;
+    left: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.l-13201 {
+    top: 24px;
+    left: 15px;
+    font-size: var(--font-size-5xs);
+    width: 48px;
+}
+
+.from-pig-launcher-parent {
+    position: absolute;
+    top: 208px;
+    left: 22px;
+    background-color: var(--color-lightsteelblue);
+    width: 93px;
+    height: 33px;
+    overflow: hidden;
+    font-size: var(--font-size-3xs);
+}
+
+.entahlah-transformed-parent {
+    width: 100%;
+    position: relative;
+    background-color: #bfbfbf;
+    height: 622.4px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-5xs);
+    color: var(--color-black);
+    font-family: var(--font-roboto);
+}
