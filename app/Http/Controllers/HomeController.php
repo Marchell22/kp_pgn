@@ -20,17 +20,17 @@ class HomeController extends Controller
         return view('pegawai.denahKedua');
     }              
     public function dashboard(){
-        return view('dashboard');
+        return view('admin.dashboard');
     }
     public function landing(){
-        return view('landing');
+        return view('admin.landing');
     }
     public function index(){
         $data=User::get();
-        return view('index', compact('data'));
+        return view('admin.index', compact('data'));
     }
     public function create(){
-        return view('create');
+        return view('admin.create');
     }
     public function store(Request $request){
         $validator = Validator::make($request->all(),[
@@ -51,7 +51,7 @@ class HomeController extends Controller
     }
     public function edit(Request $request, $id){
         $data = User::find($id);
-        return view('edit',compact('data'));
+        return view('admin.edit',compact('data'));
 
     }
     public function update(Request $request, $id){
