@@ -40,7 +40,7 @@
 
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed">
+<a href="{}"><body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
         <!-- Preloader -->
@@ -107,25 +107,25 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG CAUTCHER AREA CP1</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG LAUNCHER AREA</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG RECEIVER AREA CP1</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG LAUNCHER AREA CP1</p>
                                     </a>
@@ -153,220 +153,220 @@
                 <img class="denahkedua-1-icon" alt="" src="{{ asset('img/denahKedua.png') }}" />
 
                 <div class="blowdown-to-atm-wrapper">
-                    <b class="blowdown-to-atm">BLOWDOWN TO ATM</b>
+                    <a href="{}"><b class="blowdown-to-atm">BLOWDOWN TO ATM</b></a>
                 </div>
                 <div class="plv-3014-wrapper">
-                    <b class="plv-3014">35-PLV-3014</b>
+                    <a href="{}"><b class="plv-3014">35-PLV-3014</b></a>
                 </div>
                 <div class="ft-2030-wrapper">
-                    <b class="ft-2030">35-FT-2030</b>
+                    <a href="{}"><b class="ft-2030">35-FT-2030</b></a>
                 </div>
                 <div class="hcv-2030-wrapper">
-                    <b class="hcv-2030">35-HCV-2030</b>
+                    <a href="{}"><b class="hcv-2030">35-HCV-2030</b></a>
                 </div>
                 <div class="bv-3019-wrapper">
-                    <b class="bv-3019">35-BV-3019</b>
+                    <a href="{}"><b class="bv-3019">35-BV-3019</b></a>
                 </div>
                 <div class="plv-3013-wrapper">
-                    <b class="plv-3013">35-PLV-3013</b>
+                    <a href="{}"><b class="plv-3013">35-PLV-3013</b></a>
                 </div>
                 <div class="bv-1407-wrapper">
-                    <b class="bv-3019">35-BV-1407</b>
+                    <a href="{}"><b class="bv-3019">35-BV-1407</b></a>
                 </div>
                 <div class="bv-1302-wrapper">
-                    <b class="bv-3019">35-BV-1302</b>
+                    <a href="{}"><b class="bv-3019">35-BV-1302</b></a>
                 </div>
                 <div class="hcv-1327-wrapper">
-                    <b class="hcv-1327">35-HCV-1327</b>
+                    <a href="{}"><b class="hcv-1327">35-HCV-1327</b></a>
                 </div>
                 <div class="bv-1408-wrapper">
-                    <b class="bv-3019">35-BV-1408</b>
+                    <a href="{}"><b class="bv-3019">35-BV-1408</b></a>
                 </div>
                 <div class="bv-1303-wrapper">
-                    <b class="bv-3019">35-BV-1303</b>
+                    <a href="{}"><b class="bv-3019">35-BV-1303</b></a>
                 </div>
                 <div class="from-slug-catcher-35-v-2130-wrapper">
-                    <b class="from-pig-launcher-37-r-1020-container">
+                    <a href="{}"><b class="from-pig-launcher-37-r-1020-container">
                         <span class="from-slug-catcher-35-v-2130-tx-container">
                             <p class="from-slug">FROM SLUG</p>
                             <p class="from-slug">CATCHER</p>
                             <p class="from-slug">35-V-2130</p>
                         </span>
-                    </b>
+                    </b></a>
                 </div>
                 <div class="tp-3560-wrapper">
-                    <b class="tp-3560">
+                    <a href="{}"><b class="tp-3560">
                         <span class="tp-3560-txt">
                             <p class="from-slug">TP</p>
                             <p class="from-slug">3560</p>
                         </span>
-                    </b>
+                    </b></a>
                 </div>
                 <div class="tp-3350-wrapper">
-                    <b class="tp-3560">
+                    <a href="{}"><b class="tp-3560">
                         <span class="tp-3560-txt">
                             <p class="from-slug">TP</p>
                             <p class="from-slug">3350</p>
                         </span>
-                    </b>
+                    </b></a>
                 </div>
                 <div class="to-slug-catcher-35-v2130-wrapper">
-                    <b class="from-pig-launcher-37-r-1020-container">
+                    <a href="{}"><b class="from-pig-launcher-37-r-1020-container">
                         <span class="from-slug-catcher-35-v-2130-tx-container">
                             <p class="from-slug">TO SLUG</p>
                             <p class="from-slug">CATCHER</p>
                             <p class="from-slug">35-V-2130</p>
                         </span>
-                    </b>
+                    </b></a>
                 </div>
                 <div class="from-pig-launcher-37-r-1020-wrapper">
-                    <b class="from-pig-launcher-37-r-1020-container">
+                    <a href="{}"><b class="from-pig-launcher-37-r-1020-container">
                         <span class="from-slug-catcher-35-v-2130-tx-container">
-                            <p class="from-slug">FROM PIG LAUNCHER</p>
+                            <p class="from-slug">FROM PIGLAUNCHER</p>
                             <p class="from-slug">37-R-1020</p>
                         </span>
-                    </b>
+                    </b></a>
                 </div>
                 <div class="to-pig-receiver-35-r-1020-wrapper">
-                    <b class="from-pig-launcher-37-r-1020-container">
+                    <a href="{}"><b class="from-pig-launcher-37-r-1020-container">
                         <span class="from-slug-catcher-35-v-2130-tx-container">
-                            <p class="from-slug">TO PIG RECEIVER</p>
+                            <p class="from-slug">TO PIGRECEIVER</p>
                             <p class="from-slug">35-R-1020</p>
                         </span>
-                    </b>
+                    </b></a>
                 </div>
                 <div class="future-connection-for-add-gas-wrapper">
-                    <b class="future-connection-for-add-container">
+                    <a href="{}"><b class="future-connection-for-add-container">
                         <span class="from-slug-catcher-35-v-2130-tx-container">
                             <p class="from-slug ">FUTURE</p>
                             <p class="from-slug">CONNECTION</p>
                             <p class="from-slug">FOR ADD GAS</p>
                             <p class="from-slug">COMPROSSER</p>
                         </span>
-                    </b>
+                    </b></a>
                 </div>
                 <div class="gas-engine-generator-wrapper">
-                    <b class="gas-engine-generator">
+                    <a href="{}"><b class="gas-engine-generator">
                         <span class="from-slug-catcher-35-v-2130-tx-container">
                             <p class="from-slug">GAS ENGINE</p>
                             <p class="from-slug">GENERATOR</p>
                         </span>
-                    </b>
+                    </b></a>
                 </div>
                 <div class="bv-2001-wrapper">
-                    <b class="bv-3019">35-BV-2001</b>
+                    <a href="{}"><b class="bv-3019">35-BV-2001</b></a>
                 </div>
                 <div class="bv-3013-wrapper">
-                    <b class="bv-3019">35-BV-3013</b>
+                    <a href="{}"><b class="bv-3019">35-BV-3013</b></a>
                 </div>
                 <div class="plv-3009-wrapper">
-                    <b class="plv-3013">35-PLV-3009</b>
+                    <a href="{}"><b class="plv-3013">35-PLV-3009</b></a>
                 </div>
                 <div class="plv-3010-wrapper">
-                    <b class="plv-3013">35-PLV-3010</b>
+                    <a href="{}"><b class="plv-3013">35-PLV-3010</b></a>
                 </div>
                 <div class="hcv-1325-wrapper">
-                    <b class="hcv-1327">35-HCV-1325</b>
+                    <a href="{}"><b class="hcv-1327">35-HCV-1325</b></a>
                 </div>
                 <div class="bv-1301-wrapper">
-                    <b class="bv-1301">35-BV-1301</b>
+                    <a href="{}"><b class="bv-1301">35-BV-1301</b></a>
                 </div>
                 <div class="bv-1304-wrapper">
-                    <b class="bv-1301">35-BV-1304</b>
+                    <a href="{}"><b class="bv-1301">35-BV-1304</b></a>
                 </div>
                 <div class="hcv-1324-wrapper">
-                    <b class="hcv-1324">35-HCV-1324</b>
+                    <a href="{}"><b class="hcv-1324">35-HCV-1324</b></a>
                 </div>
                 <div class="plv-3011-wrapper">
-                    <b class="plv-3011">35-PLV-3011</b>
+                    <a href="{}"><b class="plv-3011">35-PLV-3011</b></a>
                 </div>
                 <div class="bv-3015-wrapper">
-                    <b class="bv-3015">35-BV-3015</b>
+                    <a href="{}"><b class="bv-3015">35-BV-3015</b></a>
                 </div>
                 <div class="bv-3016-wrapper">
-                    <b class="bv-3016">35-BV-3016</b>
+                    <a href="{}"><b class="bv-3016">35-BV-3016</b></a>
                 </div>
                 <div class="bv-1302-container">
-                    <b class="bv-3016">35-BV-1302</b>
+                    <a href="{}"><b class="bv-3016">35-BV-1302</b></a>
                 </div>
                 <div class="bv-1326-wrapper">
-                    <b class="bv-3016">35-BV-1326</b>
+                    <a href="{}"><b class="bv-3016">35-BV-1326</b></a>
                 </div>
                 <div class="plv-3012-wrapper">
-                    <b class="plv-3012">35-PLV-3012</b>
+                    <a href="{}"><b class="plv-3012">35-PLV-3012</b></a>
                 </div>
                 <div class="bv-1322-wrapper">
-                    <b class="bv-1322">35-BV-1322</b>
+                    <a href="{}"><b class="bv-1322">35-BV-1322</b></a>
                 </div>
                 <div class="plv-2101-wrapper">
-                    <b class="plv-3012">35-PLV-2101</b>
+                    <a href="{}"><b class="plv-3012">35-PLV-2101</b></a>
                 </div>
                 <div class="bv-2101-wrapper">
-                    <b class="bv-1322">35-BV-2101</b>
+                    <a href="{}"><b class="bv-1322">35-BV-2101</b></a>
                 </div>
                 <div class="plv-2103-wrapper">
-                    <b class="plv-2103">35-PLV-2103</b>
+                    <a href="{}"><b class="plv-2103">35-PLV-2103</b></a>
                 </div>
                 <div class="plv-1303-wrapper">
-                    <b class="plv-2103">35-PLV-1303</b>
+                    <a href="{}"><b class="plv-2103">35-PLV-1303</b></a>
                 </div>
                 <div class="zsc-1320-wrapper">
-                    <b class="plv-2103">35-ZSC-1320</b>
+                    <a href="{}"><b class="plv-2103">35-ZSC-1320</b></a>
                 </div>
                 <div class="psv-1405-wrapper">
-                    <b class="plv-2103">35-PSV-1405</b>
+                    <a href="{}"><b class="plv-2103">35-PSV-1405</b></a>
                 </div>
                 <div class="bv-1404-wrapper">
-                    <b class="bv-3015">35-BV-1404</b>
+                    <a href="{}"><b class="bv-3015">35-BV-1404</b></a>
                 </div>
                 <div class="psv-1403-wrapper">
-                    <b class="plv-2103">35-PSV-1403</b>
+                    <a href="{}"><b class="plv-2103">35-PSV-1403</b></a>
                 </div>
                 <div class="psv-1320-wrapper">
-                    <b class="plv-2103">35-PSV-1320</b>
+                    <a href="{}"><b class="plv-2103">35-PSV-1320</b></a>
                 </div>
                 <div class="pi-1320a-wrapper">
-                    <b class="pi-1320a">35-PI-1320A</b>
+                    <a href="{}"><b class="pi-1320a">35-PI-1320A</b></a>
                 </div>
                 <div class="pi-1320b-wrapper">
-                    <b class="pi-1320a">35-PI-1320B</b>
+                    <a href="{}"><b class="pi-1320a">35-PI-1320B</b></a>
                 </div>
                 <div class="l-1320-wrapper">
-                    <b class="l-1320">35-L-1320</b>
+                    <a href="{}"><b class="l-1320">35-L-1320</b></a>
                 </div>
                 <div class="bv-1301-container">
-                    <b class="bv-13011">35-BV-1301</b>
+                    <a href="{}"><b class="bv-13011">35-BV-1301</b></a>
                 </div>
                 <div class="zs-1320-wrapper">
-                    <b class="bv-1301">35-ZS-1320</b>
+                    <a href="{}"><b class="bv-1301">35-ZS-1320</b></a>
                 </div>
                 <div class="plv-1404-wrapper">
-                    <b class="l-1320">35-PLV-1404</b>
+                    <a href="{}"><b class="l-1320">35-PLV-1404</b></a>
                 </div>
                 <div class="pi-1328-wrapper">
-                    <b class="bv-1322">35-PI-1328</b>
+                    <a href="{}"><b class="bv-1322">35-PI-1328</b></a>
                 </div>
                 <div class="pt-1322-wrapper">
-                    <b class="bv-1322">35-PT-1322</b>
+                    <a href="{}"><b class="bv-1322">35-PT-1322</b></a>
                 </div>
                 <div class="zs-1310-wrapper">
-                    <b class="bv-13011">35-ZS-1310</b>
+                    <a href="{}"><b class="bv-13011">35-ZS-1310</b></a>
                 </div>
                 <div class="plv-1406-wrapper">
-                    <b class="plv-1406">35-PLV-1406</b>
+                    <a href="{}"><b class="plv-1406">35-PLV-1406</b></a>
                 </div>
                 <div class="plv-3014-container">
-                    <b class="plv-30141">35-PLV-3014</b>
+                    <a href="{}"><b class="plv-30141">35-PLV-3014</b></a>
                 </div>
                 <div class="plv-3020-wrapper">
-                    <b class="plv-3014">35-PLV-3020</b>
+                    <a href="{}"><b class="plv-3014">35-PLV-3020</b></a>
                 </div>
             </div>
         </div>
 
         @yield('content')
         <footer class="main-footer">
-            <strong>Copyright &copy; 2024 <a href="">by PGNCOM</a>.</strong>
+            <strong>Copyright &copy; 2024 <a href="{}">by PGNCOM</a>.</strong>
             <div class="float-right d-none d-sm-inline-block">
             </div>
         </footer>

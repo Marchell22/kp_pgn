@@ -1,3 +1,8 @@
+.content-wrapper a {
+    color: black;
+    text-decoration: none;
+    /* Optional: menghapus garis bawah pada tautan */
+}
 .denahkedua-1-icon {
     position: absolute;
     top: 0;
