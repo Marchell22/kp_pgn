@@ -1,3 +1,9 @@
+.content-wrapper a {
+    color: black;
+    text-decoration: none;
+    /* Optional: menghapus garis bawah pada tautan */
+}
+
 .entahlah-transformed-icon {
     position: absolute;
     top: 0;
