@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\PropertyDenahController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,5 +41,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:user
     Route::get('/dashboard', [HomeController::class, 'userDashboard'])->name('pegawai.dashboard');
      Route::get('/denahPertama', [HomeController::class, 'denahPertama'])->name('pegawai.denahPertama');
      Route::get('/denahKedua', [HomeController::class, 'denahKedua'])->name('pegawai.denahKedua');
+     Route::post('/denahStore', [PropertyDenahController::class, 'store'])->name('store');
 });
 
