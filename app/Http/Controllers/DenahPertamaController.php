@@ -30,8 +30,12 @@ class DenahPertamaController extends Controller
         $in['name'] = $name;
         $in['value'] = $value;
   
-        $denahFirstData = denahPertama::first();
-        $denahFirstData -> update($in);
+        if ($denahSecondData = denahPertama::first()) {
+            $denahSecondData->update($in);
+        } else {
+            // If it doesn't exist, create a new record
+            denahPertama::create($in);
+        }
         return redirect()->route('admin.pegawai.denahPertama');
     }
     public function create()

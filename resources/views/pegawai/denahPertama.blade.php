@@ -392,7 +392,7 @@
                             </tr>
                         </thead>
                         <tbody>
-
+                            @if ($denahFirstData)
                             @php
                             $names = json_decode($denahFirstData -> name, true);
                             $values = json_decode($denahFirstData -> value, true);
@@ -411,6 +411,7 @@
                                 <td><a href="javascript:void(0)" class="btn btn-danger btn-sm deleteRow">-</a></td>
                             </tr>
                             @endforeach
+                            @endif
                             @endif
 
                         </tbody>
