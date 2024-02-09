@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DenahPertamaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\loginController;
@@ -39,8 +40,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:admi
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:user'], 'as' => 'admin.'], function(){
     Route::get('/dashboard', [HomeController::class, 'userDashboard'])->name('pegawai.dashboard');
-     Route::get('/denahPertama', [HomeController::class, 'denahPertama'])->name('pegawai.denahPertama');
+     Route::get('/denahPertama', [DenahPertamaController::class, 'index'])->name('pegawai.denahPertama');
      Route::get('/denahKedua', [HomeController::class, 'denahKedua'])->name('pegawai.denahKedua');
      Route::post('/denahStore', [PropertyDenahController::class, 'store'])->name('store');
+     Route::post('/submitDenahPertama', [DenahPertamaController::class, 'submit'])->name('submit');
+
 });
 
