@@ -15,8 +15,8 @@ class dataAkunSeeder extends Seeder
     public function run(): void
     {
         DB::table('users')->insert([
-            'name' => 'Nama Pengguna',
-            'email' => 'pengguna@example.com',
+            'name' => 'Marchell',
+            'email' => 'chell@gmail.com',
             'password' => Hash::make('123'),
             'role' => 'admin',
             // tambahkan kolom dan nilai sesuai kebutuhan
