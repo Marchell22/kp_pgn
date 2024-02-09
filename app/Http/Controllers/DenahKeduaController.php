@@ -2,26 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\denahPertama;
+use App\Models\denahKedua;
 use Illuminate\Http\Request;
 
-class DenahPertamaController extends Controller
+class DenahKeduaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function indexDenahPertama()
+    public function indexDenahKedua()
     {
-        $denahFirstData = denahPertama::first();
+        
+        $denahSecondData = denahKedua::first();
 
         // Pass the data to the view
-        return view('pegawai.denahPertama', compact('denahFirstData'));
+        return view('pegawai.denahKedua', compact('denahSecondData'));
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function submitDenahPertama(Request $request)
+    public function submitDenahKedua(Request $request)
     {
         $name = json_encode($request->name);
         $value =json_encode($request->value);
@@ -30,10 +27,19 @@ class DenahPertamaController extends Controller
         $in['name'] = $name;
         $in['value'] = $value;
   
-        $denahFirstData = denahPertama::first();
-        $denahFirstData -> update($in);
-        return redirect()->route('admin.pegawai.denahPertama');
+       if ($denahSecondData = denahKedua::first()) {
+            $denahSecondData->update($in);
+        } else {
+            // If it doesn't exist, create a new record
+            denahKedua::create($in);
+        }
+
+        return redirect()->route('admin.pegawai.denahKedua');
     }
+
+    /**
+     * Show the form for creating a new resource.
+     */
     public function create()
     {
         //
@@ -50,7 +56,7 @@ class DenahPertamaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(denahPertama $denahPertama)
+    public function show(denahKedua $denahKedua)
     {
         //
     }
@@ -58,7 +64,7 @@ class DenahPertamaController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(denahPertama $denahPertama)
+    public function edit(denahKedua $denahKedua)
     {
         //
     }
@@ -66,7 +72,7 @@ class DenahPertamaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, denahPertama $denahPertama)
+    public function update(Request $request, denahKedua $denahKedua)
     {
         //
     }
@@ -74,7 +80,7 @@ class DenahPertamaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(denahPertama $denahPertama)
+    public function destroy(denahKedua $denahKedua)
     {
         //
     }

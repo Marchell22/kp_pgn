@@ -387,7 +387,7 @@
                     <a href=""  class="show-modal"onclick="showModal()"><b class="l-1320">35-PLV-1404</b></a>
                 </div>
                 <div class="pi-1328-wrapper">
-                    <a href="" class="show-modal" class="show-modal"onclick="showModal()"><b class="bv-1322">35-PI-1328</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"><b class="bv-1322">35-PI-1328</b></a>
                 </div>
                 <div class="pt-1322-wrapper">
                     <a href="" class="show-modal"onclick="showModal()"><b class="bv-1322">35-PT-1322</b></a>
@@ -406,29 +406,45 @@
                 </div>
             </div>
         </div>
-        <div id="myModal" class="modal">
+                <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal()">&times;</span>
-                
-                <form method="POST" action="{{ route('admin.store') }}">
+                <form action="{{ route('admin.submitDenahKedua') }}" method='post'>
                     @csrf
-                    <table class ="table table-bordered" id ="table">
-                        <tr>
-                            <td>Name</td>
-                            <td>Action</td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="inputs[0][name]" placeholder="Masukan Data" class="form-control"></td>
-                            <td><button type="button" name="add" id="add" class="btn btn-success">Tambah</button></td>
-                        </tr>
-                        
+                    <table class="table table-bordered bordered" id ="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Value</th>
+                                <th><a href="javascript:void(0)" class="btn btn-success btn-sm addRow">+</a></th>    
+                            </tr>
+                            </thead>
+                            <tbody>
+                                @if ($denahSecondData)
+                                @php
+                                    $names = json_decode($denahSecondData -> name, true);
+                                    $values = json_decode($denahSecondData -> value, true);
+                                @endphp
+                                @if($names && $values)
+                                    @foreach($names as $key => $value)
+                                    <tr>     
+                                        <td>
+                                            <input type="text" name="name[]" placeholder="Masukan Nama" class="form-control" value={{ $value }}>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="value[]" placeholder="Masukan Value" class="form-control" value={{ $values[$key] }}>    
+                                        </td>
+                                        <td><a href="javascript:void(0)" class="btn btn-danger btn-sm deleteRow">-</a></td>    
+                                    </tr>    
+                                    @endforeach
+                                @endif
+                                @endif
+                            </tbody>   
                     </table>
-                   
-                    <button type="submit" class="btn btn-primary">Simpan</button> 
+                    <button type="submit" class="btn btn-success mt-2">Update</button>
                 </form>
             </div>
         </div>
-
         @yield('content')
         <footer class="main-footer">
             <strong>Copyright &copy; 2024 <a href="">by PGNCOM</a>.</strong>
@@ -475,7 +491,7 @@
     <script src="{{ asset ('lte/dist/js/demo.js')}}"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{ asset ('lte/dist/js/pages/dashboard.js')}}"></script>
-    <script>
+        <script>
         // Temukan elemen-elemen yang diperlukan
         var modal = document.getElementById('myModal');
         var showModalBtns = document.getElementsByClassName('show-modal');
@@ -494,10 +510,10 @@
 
         // Tambahkan event listener ke setiap elemen <a>
         for (var i = 0; i < showModalBtns.length; i++) {
-    showModalBtns[i].addEventListener('click', function(event) {
-        showModal(event);
-    });
-}
+            showModalBtns[i].addEventListener('click', function(event) {
+                showModal(event);
+            });
+        }
 
         // Tambahkan event listener ke tombol close
         span.addEventListener('click', closeModal);
@@ -511,35 +527,23 @@
 
     </script>
     <script>
-        var i = 0;
-        $('#add').click(function(){
-            ++i;
-            $('#table').append(
-                '<tr>' +
-                    '<td>' +
-                        '<input type="text" name="inputs['+i+'][name]" placeholder="Masukan Data" class="form-control"/>' +
-                    '</td>' +
-                    '<td>' +
-                        '<button type="button" class="btn btn-danger remove-table-row">Remove</button>' +
-                    '</td>' +
-                '</tr>'
-            );
-        });
-        $(document).on('click', '.remove-table-row', function(){
-            $(this).closest('tr').remove();
-        });
+    $('thead').on('click', '.addRow', function () {
+        var tr = `<tr>
+                <td>
+                    <input type='text' name="name[]" placeholder="Masukan Nama" class="form-control">        
+                </td>
+                <td>
+                    <input type='text' name="value[]" placeholder="Masukan Data" class="form-control">
+                </td>
+                <td><a href="javascript:void(0)" class="btn btn-danger btn-sm deleteRow">-</a></td>
+            </tr>`;
+        $('tbody').append(tr);
+    });
 
-    </script>
-     <script>
-        // Ambil pesan success dari session
-        var successMessage = '{{ session('success') }}';
-
-        // Periksa apakah pesan success ada dan bukan string kosong
-        if (successMessage && successMessage.trim() !== '') {
-            // Tampilkan alert dengan pesan success
-            alert(successMessage);
-        }
-    </script>
+    $('tbody').on('click', '.deleteRow', function () {
+        $(this).parent().parent().remove();
+    });
+</script>
 
 </body>
 

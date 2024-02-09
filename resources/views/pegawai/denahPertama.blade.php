@@ -373,7 +373,7 @@
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal()">&times;</span>
-                <form action="{{ route('admin.submit') }}" method='post'>
+                <form action="{{ route('admin.submitDenahPertama') }}" method='post'>
                     @csrf
                     <table class="table table-bordered bordered" id ="table">
                         <thead>
@@ -384,6 +384,7 @@
                             </tr>
                             </thead>
                             <tbody>
+                                
                                 @php
                                     $names = json_decode($denahFirstData -> name, true);
                                     $values = json_decode($denahFirstData -> value, true);

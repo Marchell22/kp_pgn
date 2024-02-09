@@ -1,10 +1,11 @@
 <?php
 
+use App\Http\Controllers\DenahKeduaController;
 use App\Http\Controllers\DenahPertamaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\loginController;
-use App\Http\Controllers\PropertyDenahController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -40,10 +41,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:admi
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:user'], 'as' => 'admin.'], function(){
     Route::get('/dashboard', [HomeController::class, 'userDashboard'])->name('pegawai.dashboard');
-     Route::get('/denahPertama', [DenahPertamaController::class, 'index'])->name('pegawai.denahPertama');
-     Route::get('/denahKedua', [HomeController::class, 'denahKedua'])->name('pegawai.denahKedua');
-     Route::post('/denahStore', [PropertyDenahController::class, 'store'])->name('store');
-     Route::post('/submitDenahPertama', [DenahPertamaController::class, 'submit'])->name('submit');
+     Route::get('/denahPertama', [DenahPertamaController::class, 'indexDenahPertama'])->name('pegawai.denahPertama');
+     Route::post('/submitDenahPertama', [DenahPertamaController::class, 'submitDenahPertama'])->name('submitDenahPertama'); 
+     Route::get('/denahkedua', [DenahKeduaController::class, 'indexDenahKedua'])->name('pegawai.denahKedua');
+     Route::post('/submitDenahKedua', [DenahKeduaController::class, 'submitDenahKedua'])->name('submitDenahKedua'); 
 
 });
 
