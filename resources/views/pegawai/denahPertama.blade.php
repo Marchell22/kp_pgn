@@ -87,6 +87,9 @@
                 margin-left: 30%;
             }
         }
+        .hidden-input {
+            display: none;
+        }
 
     </style>
 
@@ -381,7 +384,7 @@
                 
                 <form action="{{ route('admin.submitDenahPertama') }}" method='post'>
                     @csrf
-                    <input type="text" id="value_id_input" name="value_id"/>
+                    <input type="text" id="value_id_input" name="value_id" style="display: none;"/>
                     <table class="table table-bordered bordered" id="table" data-id="1">
                         <thead>
                             <tr>
