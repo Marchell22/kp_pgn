@@ -204,185 +204,184 @@
             <div class="entahlah-transformed-parent">
                 <img class="entahlah-transformed-icon" alt="" src="{{ asset('img/denahPertama.png') }}" />
                 <div class="pi-1022-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="pi-1020b">35-PI-1022</b></a>
+                    <a href="" class="show-modal" onclick="showModal()" data-value-id="1"><b class="pi-1020b">35-PI-1022</b></a>
                 </div>
                 <div class="ti-1022-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="pi-1020b">35-TI-1022</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="2"><b class="pi-1020b">35-TI-1022</b></a>
                 </div>
                 <div class="bv-1022-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="bv-1022">35-BV-1022</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="3"><b class="bv-1022">35-BV-1022</b></a>
                 </div>
                 <div class="pt-1031a-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="pt-1031a">35-PT-1031A</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="4"><b class="pt-1031a">35-PT-1031A</b></a>
                 </div>
                 <div class="pt-1031b-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="pt-1031a">35-PT-1031B</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="5"><b class="pt-1031a">35-PT-1031B</b></a>
                 </div>
                 <div class="pt-1031c-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="pt-1031a">35-PT-1031C</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="6"><b class="pt-1031a">35-PT-1031C</b></a>
                 </div>
                 <div class="tt-1020-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="tt-1020">35-TT-1020</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="7"><b class="tt-1020">35-TT-1020</b></a>
                 </div>
                 <div class="ti-1020-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="tt-1020">35-TI-1020</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="8"><b class="tt-1020">35-TI-1020</b></a>
                 </div>
                 <div class="plv-3005-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="pt-1031a">35-PLV-3005</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="9"><b class="pt-1031a">35-PLV-3005</b></a>
                 </div>
                 <div class="plv-3006-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3006">35-PLV-3006</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="10"><b class="plv-3006">35-PLV-3006</b></a>
                 </div>
                 <div class="gtv-1401-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="gtv-1401">35-GTV-1401</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="11"><b class="gtv-1401">35-GTV-1401</b></a>
                 </div>
                 <div class="plv-1401-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3006">35-PLV-1401</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="12"><b class="plv-3006">35-PLV-1401</b></a>
                 </div>
                 <div class="plv-1002-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3006">35-PLV-1002</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="13"><b class="plv-3006">35-PLV-1002</b></a>
                 </div>
                 <div class="plv-1003-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3006">35-PLV-1003</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="14"><b class="plv-3006">35-PLV-1003</b></a>
                 </div>
                 <div class="zsc-1025-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3006">35-ZSC-1025</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="15"><b class="plv-3006">35-ZSC-1025</b></a>
                 </div>
                 <div class="bv-1401-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="gtv-1401">35-BV-1401</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="16"><b class="gtv-1401">35-BV-1401</b></a>
                 </div>
                 <div class="bv-1402-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="bv-1402">
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="17"><b class="bv-1402">
                             <p class="p">35</p>
                             <p class="p">BV</p>
                             <p class="p">1402</p>
                         </b></a>
                 </div>
                 <div class="plv-1401-container">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3006">35-PLV-1401</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="17"><b class="plv-3006">35-PLV-1401</b></a>
                 </div>
                 <div class="psv-1020-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3006">35-PSV-1020</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="18"><b class="plv-3006">35-PSV-1020</b></a>
                 </div>
                 <div class="pi-1020b-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="pi-1020b">35-PI-1020B</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="19"><b class="pi-1020b">35-PI-1020B</b></a>
                 </div>
                 <div class="pi-1020b-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="pi-1020b">35-PI-1020B</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="20"><b class="pi-1020b">35-PI-1020B</b></a>
                 </div>
                 <div class="bv-1002-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="gtv-1401">35-BV-1002</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="21"><b class="gtv-1401">35-BV-1002</b></a>
                 </div>
                 <div class="bv-1002-container">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="gtv-1401">35-BV-1002</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="22"><b class="gtv-1401">35-BV-1002</b></a>
                 </div>
                 <div class="zs-1021-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="gtv-1401">35-ZS-1021</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="23"><b class="gtv-1401">35-ZS-1021</b></a>
                 </div>
                 <div class="hcv-1020-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="hcv-1020">35-HCV-1020</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="24"><b class="hcv-1020">35-HCV-1020</b></a>
                 </div>
                 <div class="bv-1002-frame">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="bv-10022">35-BV-1002</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="25"><b class="bv-10022">35-BV-1002</b></a>
                 </div>
                 <div class="bv-1001-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="gtv-1401">35-BV-1001</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="26"><b class="gtv-1401">35-BV-1001</b></a>
                 </div>
                 <div class="bv-1403-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="bv-1403">35-BV-1403</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="27"><b class="bv-1403">35-BV-1403</b></a>
                 </div>
                 <div class="plv-1402-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-1402">35-PLV-1402</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="28"><b class="plv-1402">35-PLV-1402</b></a>
                 </div>
                 <div class="blowdown-to-atm-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="blowdown-to-atm">BLOWDOWN TO
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="29"><b class="blowdown-to-atm">BLOWDOWN TO
                             ATM</b></a>
                 </div>
                 <div class="pi-1025-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="pi-1025">35-PI-1025</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="30"><b class="pi-1025">35-PI-1025</b></a>
                 </div>
                 <div class="bv-3002-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="bv-3002">35-BV-3002</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="31"><b class="bv-3002">35-BV-3002</b></a>
                 </div>
                 <div class="bv-3001-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="bv-3002">35-BV-3001</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="32"><b class="bv-3002">35-BV-3001</b></a>
                 </div>
                 <div class="pt-1021-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="bv-3002">35-PT-1021</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="33"><b class="bv-3002">35-PT-1021</b></a>
                 </div>
                 <div class="zs-1020-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="bv-3002">35-ZS-1020</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="34"><b class="bv-3002">35-ZS-1020</b></a>
                 </div>
                 <div class="plv-3003-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3003">35-PLV-3003</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="35"><b class="plv-3003">35-PLV-3003</b></a>
                 </div>
                 <div class="bv-3005-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3003">35-BV-3005</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="36"><b class="plv-3003">35-BV-3005</b></a>
                 </div>
                 <div class="hcv-1021-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3003">35-HCV-1021</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="37"><b class="plv-3003">35-HCV-1021</b></a>
                 </div>
                 <div class="plv-3004-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3003">35-PLV-3004</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="38"><b class="plv-3003">35-PLV-3004</b></a>
                 </div>
                 <div class="bv-3006-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3003">35-BV-3006</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="39"><b class="plv-3003">35-BV-3006</b></a>
                 </div>
                 <div class="frame-div">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="bv-10023">35-BV-1002</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="40"><b class="bv-10023">35-BV-1002</b></a>
                 </div>
                 <div class="bv-1002-wrapper1">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="bv-10023">35-BV-1002</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="41"><b class="bv-10023">35-BV-1002</b></a>
                 </div>
                 <div class="plv-1001-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3006">35-PLV-1001</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="42"><b class="plv-3006">35-PLV-1001</b></a>
                 </div>
                 <div class="pi-1020a-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="pi-1020b">35-PI-1020A</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="43"><b class="pi-1020b">35-PI-1020A</b></a>
                 </div>
                 <div class="r-1020-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="r-1020">35-R-1020</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="44"><b class="r-1020">35-R-1020</b></a>
                 </div>
                 <div class="vent-atm-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="vent-atm">
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="45"><b class="vent-atm">
                             <p class="p">VENT</p>
                             <p class="p">ATM</p>
                         </b></a>
                 </div>
                 <div class="to-sump-tank-parent">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="to-sump-tank">TO SUMP TANK</b></a>
-                    <a href="" class="show-modal" onclick="showModal()"><b class="v-2140">35-V-2140</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="46"><b class="to-sump-tank">TO SUMP TANK</b><b class="v-2140">35-V-2140</b></a>
+                    
                 </div>
                 <div class="to-sump-tank-parent">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="to-sump-tank">TO SUMP TANK</b></a>
-                    <a href="" class="show-modal" onclick="showModal()"><b class="v-2140">35-V-2140</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="47"><b class="to-sump-tank">TO SUMP TANK</b><b class="v-2140">35-V-2140</b></a>
                 </div>
                 <div class="to-pig-launcher-parent">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="to-pig-launcher">TO PIG
-                            LAUNCHER</b></a>
-                    <a href="" class="show-modal" onclick="showModal()"><b class="l-1320">35-L-1320</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="48"><b class="to-pig-launcher">TO PIG
+                            LAUNCHER</b><b class="l-1320">35-L-1320</b></a>
                 </div>
                 <div class="plv-3010-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3006">35-PLV-3010</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="49"><b class="plv-3006">35-PLV-3010</b></a>
                 </div>
                 <div class="plv-3009-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3009">35-PLV-3009</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="50"><b class="plv-3009">35-PLV-3009</b></a>
                 </div>
                 <div class="sdv-1023-wrapper">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="plv-3009">35-SDV-1023</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="51"><b class="plv-3009">35-SDV-1023</b></a>
                 </div>
                 <div class="from-pig-launcher-parent">
-                    <a href="" class="show-modal" onclick="showModal()"><b class="from-pig-launcher">FROM PIG
-                            LAUNCHER</b></a>
-                    <a href="" class="show-modal" onclick="showModal()"><b class="l-13201">33-L-1320</b></a>
+                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="52"><b class="from-pig-launcher">FROM PIG
+                            LAUNCHER</b><b class="l-13201">33-L-1320</b></a>
                 </div>
             </div>
         </div>
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal()">&times;</span>
+                
                 <form action="{{ route('admin.submitDenahPertama') }}" method='post'>
                     @csrf
+                    <input type="text" id="value_id_input" name="value_id"/>
                     <table class="table table-bordered bordered" id="table" data-id="1">
                         <thead>
                             <tr>
@@ -393,25 +392,25 @@
                         </thead>
                         <tbody>
                             @if ($denahFirstData)
-                            @php
-                            $names = json_decode($denahFirstData -> name, true);
-                            $values = json_decode($denahFirstData -> value, true);
-                            @endphp
-                            @if($names && $values)
-                            @foreach($names as $key => $value)
-                            <tr>
-                                <td>
-                                    <input type="text" name="name[]" placeholder="Masukan Nama" class="form-control"
-                                        value={{ $value }}>
-                                </td>
-                                <td>
-                                    <input type="text" name="value[]" placeholder="Masukan Value" class="form-control"
-                                        value={{ $values[$key] }}>
-                                </td>
-                                <td><a href="javascript:void(0)" class="btn btn-danger btn-sm deleteRow">-</a></td>
-                            </tr>
-                            @endforeach
-                            @endif
+                                @php
+                                    $names = json_decode($denahFirstData -> name, true);
+                                    $values = json_decode($denahFirstData -> value, true);
+                                @endphp
+                                @if($names && $values)
+                                    @foreach($names as $key => $value)
+                                        <tr>
+                                            <td>
+                                                <input type="text" name="name[]" placeholder="Masukan Nama" class="form-control"
+                                                    value={{ $value }}>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="value[]" placeholder="Masukan Value" class="form-control"
+                                                    value={{ $values[$key] }}>
+                                            </td>
+                                            <td><a href="javascript:void(0)" class="btn btn-danger btn-sm deleteRow">-</a></td>
+                                        </tr>
+                                @endforeach
+                                @endif
                             @endif
 
                         </tbody>
@@ -472,10 +471,13 @@
         var modal = document.getElementById('myModal');
         var showModalBtns = document.getElementsByClassName('show-modal');
         var span = document.getElementsByClassName('close')[0];
+        var valueIdInput = document.getElementById('value_id_input');
 
         // Fungsi untuk menampilkan modal
         function showModal(event) {
             event.preventDefault(); // Menahan perilaku asli dari tautan
+            var valueId = this.getAttribute('data-value-id');
+            valueIdInput.value = valueId;
             modal.style.display = 'block';
         }
 
@@ -487,7 +489,7 @@
         // Tambahkan event listener ke setiap elemen <a>
         for (var i = 0; i < showModalBtns.length; i++) {
             showModalBtns[i].addEventListener('click', function (event) {
-                showModal(event);
+                showModal.call(this, event);
             });
         }
 
@@ -520,16 +522,6 @@
             $(this).parent().parent().remove();
         });
 
-    </script>
-    <script>
-         function createData() {
-        // Extract the data_id from the anchor tag
-        var dataId = $(".show-modal").data("id");
-
-        // You can customize the data you want to send to the server
-        var postData = {
-            data_id: dataId
-        };
     </script>
 
 
