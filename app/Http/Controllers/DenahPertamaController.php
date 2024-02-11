@@ -12,6 +12,7 @@ class DenahPertamaController extends Controller
      */
     public function indexDenahPertama()
     {
+        
         $denahFirstData = denahPertama::first();
 
         // Pass the data to the view
@@ -25,13 +26,16 @@ class DenahPertamaController extends Controller
     {
         $name = json_encode($request->name);
         $value =json_encode($request->value);
+        $valueId = $request->input('value_id'); // Ambil data-value-id dari form
+
 
         $in = [];
         $in['name'] = $name;
         $in['value'] = $value;
+        $in['value_id'] = $valueId;
   
-        if ($denahSecondData = denahPertama::first()) {
-            $denahSecondData->update($in);
+        if ($denahFirstData = denahPertama::where('value_id', $valueId)->first()) {
+            $denahFirstData->update($in);
         } else {
             // If it doesn't exist, create a new record
             denahPertama::create($in);

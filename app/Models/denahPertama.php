@@ -10,6 +10,7 @@ class denahPertama extends Model
     use HasFactory;
     protected $fillable = [
         'name',
-        'value'
+        'value',
+        'value_id'
     ];
 }
