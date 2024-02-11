@@ -18,7 +18,6 @@ class DenahPertamaController extends Controller
         // Pass the data to the view
         return view('pegawai.denahPertama', compact('denahFirstData'));
     }
-
     /**
      * Show the form for creating a new resource.
      */
