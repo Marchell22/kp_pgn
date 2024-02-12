@@ -12,12 +12,13 @@ class DenahPertamaController extends Controller
      */
     public function indexDenahPertama()
     {
-        
         $denahFirstData = denahPertama::first();
 
         // Pass the data to the view
         return view('pegawai.denahPertama', compact('denahFirstData'));
     }
+    
+
     /**
      * Show the form for creating a new resource.
      */
@@ -33,8 +34,8 @@ class DenahPertamaController extends Controller
         $in['value'] = $value;
         $in['value_id'] = $valueId;
   
-        if ($denahFirstData = denahPertama::where('value_id', $valueId)->first()) {
-            $denahFirstData->update($in);
+        if ($denahFirstdData = denahPertama::where('value_id', $valueId)->first()) {
+            $denahFirstdData->update($in);
         } else {
             // If it doesn't exist, create a new record
             denahPertama::create($in);
