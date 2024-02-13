@@ -12,7 +12,7 @@ class DenahPertamaController extends Controller
      */
     public function indexDenahPertama()
     {
-        $denahFirstData = denahPertama::find();
+        $denahFirstData = denahPertama::first();
 
         // Pass the data to the view
         return view('pegawai.denahPertama', compact('denahFirstData'));
