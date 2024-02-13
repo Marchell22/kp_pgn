@@ -12,13 +12,20 @@ class DenahPertamaController extends Controller
      */
     public function indexDenahPertama()
     {
-        $denahFirstData = denahPertama::first();
+        // $denahFirstData = denahPertama::first();
 
         // Pass the data to the view
-        return view('pegawai.denahPertama', compact('denahFirstData'));
+        return view('pegawai.denahPertama');
     }
-    
+    public function getData(Request $request)
+    {
+        $valueId = $request->input('valueId');
+        // Replace 'DenahPertama' with your actual model class name
+        $data = denahPertama::where('value_id', $valueId)->get();
 
+        return response()->json($data);
+    }
+  
     /**
      * Show the form for creating a new resource.
      */
