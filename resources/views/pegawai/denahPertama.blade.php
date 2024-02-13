@@ -384,7 +384,7 @@
                 
                 <form action="{{ route('admin.submitDenahPertama') }}" method='post'>
                     @csrf
-                    <input type="text" id="value_id_input" name="value_id" style="display: none;"/>
+                    <input type="text" id="value_id_input" name="value_id" style="display : none;">
                     <table class="table table-bordered bordered" id="table" data-id="1">
                         <thead>
                             <tr>
@@ -394,27 +394,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @if ($denahFirstData)
-                                @php
-                                    $names = json_decode($denahFirstData -> name, true);
-                                    $values = json_decode($denahFirstData -> value, true);
-                                @endphp
-                                @if($names && $values)
-                                    @foreach($names as $key => $value)
-                                        <tr>
-                                            <td>
-                                                <input type="text" name="name[]" placeholder="Masukan Nama" class="form-control"
-                                                    value={{ $value }}>
-                                            </td>
-                                            <td>
-                                                <input type="text" name="value[]" placeholder="Masukan Value" class="form-control"
-                                                    value={{ $values[$key] }}>
-                                            </td>
-                                            <td><a href="javascript:void(0)" class="btn btn-danger btn-sm deleteRow">-</a></td>
-                                        </tr>
-                                @endforeach
-                                @endif
-                            @endif
 
                         </tbody>
                     </table>
@@ -446,7 +425,7 @@
     <!-- Bootstrap 4 -->
     <script src="{{ asset('lte/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <!-- ChartJS -->
-    <script src="{{ asset('lte/plugins/chart.js/Chart.min.js')}}"></script>
+    <script src="{{ asset('lte/plugins/chart.js')}}/Chart.min.js')}}"></script>
     <!-- Sparkline -->
     <script src="{{ asset('lte/plugins/sparklines/sparkline.js')}}"></script>
     <!-- JQVMap -->
@@ -481,7 +460,61 @@
             event.preventDefault(); // Menahan perilaku asli dari tautan
             var valueId = this.getAttribute('data-value-id');
             valueIdInput.value = valueId;
-            modal.style.display = 'block';
+            $.ajax({
+                url: '/admin/denahPertama/getData', // Replace with the correct route
+                method: 'GET',
+                data: { valueId: valueId },
+                success: function (data) {
+                    // Populate the table body with data
+                    populateTableBody(data);
+                    console.log(data)
+                    modal.style.display = 'block';
+                },
+                error: function (error) {
+                    console.error('Error fetching data:', error);
+                }
+            });
+        }
+
+        // Function to populate the table body with data
+        function populateTableBody(data) {
+            var tbody = $('tbody');
+            tbody.empty(); // Clear existing rows
+            console.log(data.length)
+            data.sort(function(a, b) {
+                return new Date(b.created_at) - new Date(a.created_at);
+            });
+        
+            // Add new rows based on fetched data
+            for (var i = 0; i < data.length; i++) {
+                var names = JSON.parse(data[i].name);
+                var values = JSON.parse(data[i].value);
+                console.log(names);
+                for (var j = 0; j < names.length; j++) {
+                    var tr = `<tr>
+                        <td>
+                            <input type='text' name="name[]" placeholder="Masukan Nama" class="form-control" value="${names[j]}">        
+                        </td>
+                        <td>
+                            <input type='text' name="value[]" placeholder="Masukan Data" class="form-control" value="${values[j]}">
+                        </td>
+                        <td><a href="javascript:void(0)" class="btn btn-danger btn-sm deleteRow">-</a></td>
+                    </tr>`;
+                    tbody.append(tr);
+                }
+            }
+        
+            // Add an empty row for adding new data
+            // var emptyRow = `<tr>
+            //     <td>
+            //         <input type='text' name="name[]" placeholder="Masukan Nama" class="form-control">        
+            //     </td>
+            //     <td>
+            //         <input type='text' name="value[]" placeholder="Masukan Data" class="form-control">
+            //     </td>
+            //     <td><a href="javascript:void(0)" class="btn btn-success btn-sm addRow">+</a></td>
+            // </tr>`;
+            // tbody.append(emptyRow);
         }
 
         // Fungsi untuk menutup modal

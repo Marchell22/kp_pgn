@@ -46,6 +46,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:user
      Route::post('/submitDenahPertama', [DenahPertamaController::class, 'submitDenahPertama'])->name('submitDenahPertama'); 
      Route::get('/denahkedua', [DenahKeduaController::class, 'indexDenahKedua'])->name('pegawai.denahKedua');
      Route::post('/submitDenahKedua', [DenahKeduaController::class, 'submitDenahKedua'])->name('submitDenahKedua');
+     Route::get('/denahPertama/getData', [DenahPertamaController::class, 'getData']);
      
 });
 
