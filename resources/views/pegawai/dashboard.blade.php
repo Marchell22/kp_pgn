@@ -131,6 +131,34 @@
                                 </li>
                             </ul>
                         </li>
+                        @if(auth()->user()->role=='admin')
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>
+                                    Akun
+                                    <i class="fas fa-angle-left right"></i>
+                                    {{-- <span class="badge badge-info right">6</span> --}}
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.index') }}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Kelola Akun</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.user.create') }}" class="nav-link ">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Tambah Akun</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        @endif
                         <li class="nav-item ">
                             <a href="{{ route('logout') }}" class="nav-link ">
                                 <i class="nav-icon fas fa-sign-out-alt"></i>

@@ -17,7 +17,7 @@ class DenahPertamaController extends Controller
         // Pass the data to the view
         return view('pegawai.denahPertama');
     }
-    public function getData(Request $request)
+    public function getDataPertama(Request $request)
     {
         $valueId = $request->input('valueId');
         // Replace 'DenahPertama' with your actual model class name

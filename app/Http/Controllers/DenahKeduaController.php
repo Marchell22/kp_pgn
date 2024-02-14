@@ -13,27 +13,36 @@ class DenahKeduaController extends Controller
     public function indexDenahKedua()
     {
         
-        $denahSecondData = denahKedua::first();
+        // $denahSecondData = denahKedua::first();
 
         // Pass the data to the view
-        return view('pegawai.denahKedua', compact('denahSecondData'));
+        return view('pegawai.denahKedua');
+    }
+    public function getData(Request $request)
+    {
+        $valueId = $request->input('valueId');
+        // Replace 'DenahPertama' with your actual model class name
+        $data = denahKedua::where('value_id', $valueId)->get();
+
+        return response()->json($data);
     }
     public function submitDenahKedua(Request $request)
     {
         $name = json_encode($request->name);
         $value =json_encode($request->value);
+        $valueId = $request->input('value_id');
 
         $in = [];
         $in['name'] = $name;
         $in['value'] = $value;
+        $in['value_id'] = $valueId;
   
-       if ($denahSecondData = denahKedua::first()) {
+       if ($denahSecondData = denahKedua::where('value_id', $valueId)->first()) {
             $denahSecondData->update($in);
         } else {
             // If it doesn't exist, create a new record
             denahKedua::create($in);
         }
-
         return redirect()->route('admin.pegawai.denahKedua');
     }
 
