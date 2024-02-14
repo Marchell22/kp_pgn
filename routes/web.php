@@ -37,16 +37,23 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:admi
     Route::put('/update/{id}', [HomeController::class, 'update'])->name('user.update');
     Route::get('/cancel-edit', [HomeController::class, 'cancelEdit'])->name('user.cancelEdit');
     Route::delete('/delete/{id}', [HomeController::class, 'delete'])->name('user.delete');
+    Route::get('/dashboard', [HomeController::class, 'userDashboard'])->name('pegawai.dashboard');
+    Route::get('/denahPertama', [DenahPertamaController::class, 'indexDenahPertama'])->name('pegawai.denahPertama');
+    Route::post('/submitDenahPertama', [DenahPertamaController::class, 'submitDenahPertama'])->name('submitDenahPertama'); 
+    Route::get('/denahkedua', [DenahKeduaController::class, 'indexDenahKedua'])->name('pegawai.denahKedua');
+    Route::post('/submitDenahKedua', [DenahKeduaController::class, 'submitDenahKedua'])->name('submitDenahKedua');
+    Route::get('/denahPertama/getDataPertama', [DenahPertamaController::class, 'getDataPertama']);
+    Route::get('/denahKedua/getData', [DenahKeduaController::class, 'getData']);
 });
 
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:user'], 'as' => 'admin.'], function(){
-    Route::get('/dashboard', [HomeController::class, 'userDashboard'])->name('pegawai.dashboard');
-     Route::get('/denahPertama', [DenahPertamaController::class, 'indexDenahPertama'])->name('pegawai.denahPertama');
-     Route::post('/submitDenahPertama', [DenahPertamaController::class, 'submitDenahPertama'])->name('submitDenahPertama'); 
-     Route::get('/denahkedua', [DenahKeduaController::class, 'indexDenahKedua'])->name('pegawai.denahKedua');
-     Route::post('/submitDenahKedua', [DenahKeduaController::class, 'submitDenahKedua'])->name('submitDenahKedua');
-     Route::get('/denahPertama/getData', [DenahPertamaController::class, 'getData']);
+    //  Route::get('/dashboard', [HomeController::class, 'userDashboard'])->name('pegawai.dashboard');
+    //  Route::get('/denahPertama', [DenahPertamaController::class, 'indexDenahPertama'])->name('pegawai.denahPertama');
+    //  Route::post('/submitDenahPertama', [DenahPertamaController::class, 'submitDenahPertama'])->name('submitDenahPertama'); 
+    //  Route::get('/denahkedua', [DenahKeduaController::class, 'indexDenahKedua'])->name('pegawai.denahKedua');
+    //  Route::post('/submitDenahKedua', [DenahKeduaController::class, 'submitDenahKedua'])->name('submitDenahKedua');
+    //  Route::get('/denahPertama/getData', [DenahPertamaController::class, 'getData']);
      
 });
 

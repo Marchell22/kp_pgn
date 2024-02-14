@@ -97,13 +97,6 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-
-        <!-- Preloader -->
-        <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ asset('lte/dist/img/AdminLTELogo.png')}}" alt="AdminLTELogo"
-                height="60" width="60">
-        </div>
-
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
@@ -132,8 +125,6 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
                         <li class="nav-item menu-open">
                             <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-globe-asia"></i>
@@ -187,6 +178,34 @@
                                 </li>
                             </ul>
                         </li>
+                        @if(auth()->user()->role=='admin')
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>
+                                    Akun
+                                    <i class="fas fa-angle-left right"></i>
+                                    {{-- <span class="badge badge-info right">6</span> --}}
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.index') }}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Kelola Akun</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.user.create') }}" class="nav-link ">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Tambah Akun</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        @endif
                         <li class="nav-item ">
                             <a href="{{ route('logout') }}" class="nav-link ">
                                 <i class="nav-icon fas fa-sign-out-alt"></i>
@@ -384,7 +403,7 @@
                 
                 <form action="{{ route('admin.submitDenahPertama') }}" method='post'>
                     @csrf
-                    <input type="text" id="value_id_input" name="value_id" style="display : none;">
+                    <input type="text" id="value_id_input" name="value_id">
                     <table class="table table-bordered bordered" id="table" data-id="1">
                         <thead>
                             <tr>
@@ -394,7 +413,6 @@
                             </tr>
                         </thead>
                         <tbody>
-
                         </tbody>
                     </table>
                     <button type="submit" class="btn btn-success mt-2">Update</button>
@@ -425,7 +443,7 @@
     <!-- Bootstrap 4 -->
     <script src="{{ asset('lte/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <!-- ChartJS -->
-    <script src="{{ asset('lte/plugins/chart.js')}}/Chart.min.js')}}"></script>
+    <script src="{{ asset('lte/plugins/chart.js/Chart.min.js')}}"></script>
     <!-- Sparkline -->
     <script src="{{ asset('lte/plugins/sparklines/sparkline.js')}}"></script>
     <!-- JQVMap -->
@@ -461,7 +479,7 @@
             var valueId = this.getAttribute('data-value-id');
             valueIdInput.value = valueId;
             $.ajax({
-                url: '/admin/denahPertama/getData', // Replace with the correct route
+                url: '/admin/denahPertama/getDataPertama', // Replace with the correct route
                 method: 'GET',
                 data: { valueId: valueId },
                 success: function (data) {
@@ -490,17 +508,19 @@
                 var names = JSON.parse(data[i].name);
                 var values = JSON.parse(data[i].value);
                 console.log(names);
-                for (var j = 0; j < names.length; j++) {
-                    var tr = `<tr>
-                        <td>
-                            <input type='text' name="name[]" placeholder="Masukan Nama" class="form-control" value="${names[j]}">        
-                        </td>
-                        <td>
-                            <input type='text' name="value[]" placeholder="Masukan Data" class="form-control" value="${values[j]}">
-                        </td>
-                        <td><a href="javascript:void(0)" class="btn btn-danger btn-sm deleteRow">-</a></td>
-                    </tr>`;
-                    tbody.append(tr);
+                if (names && values) {
+                    for (var j = 0; j < names.length; j++) {
+                        var tr = `<tr>
+                            <td>
+                                <input type='text' name="name[]" placeholder="Masukan Nama" class="form-control" value="${names[j]}">        
+                            </td>
+                            <td>
+                                <input type='text' name="value[]" placeholder="Masukan Data" class="form-control" value="${values[j]}">
+                            </td>
+                            <td><a href="javascript:void(0)" class="btn btn-danger btn-sm deleteRow">-</a></td>
+                        </tr>`;
+                        tbody.append(tr);
+                    }
                 }
             }
         

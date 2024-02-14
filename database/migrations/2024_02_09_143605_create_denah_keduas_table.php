@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->json('name'); // Kolom JSON untuk menyimpan nama 
             $table->json('value'); // Kolom JSON untuk menyimpan nilai
+            $table->integer('value_id');
             $table->timestamps();
         });
     }
