@@ -13,6 +13,9 @@ class HomeController extends Controller
     public function userDashboard(){
         return view('pegawai.dashboard');
     }
+    public function karyawanDashboard(){
+        return view('karyawan.dashboardUser');
+    }
     public function denahPertama(){
         return view('pegawai.denahPertama');
     }
