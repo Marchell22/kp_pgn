@@ -49,6 +49,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:admi
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:user'], 'as' => 'admin.'], function(){
     Route::get('/indexKarywan', [HomeController::class, 'indexKaryawan'])->name('karyawan.indexKaryawan');
+    Route::get('/denahPertamaKaryawan', [DenahPertamaController::class, 'denahKaryawanPertama'])->name('karyawan.denahKaryawanPertama');
+    Route::get('/denahKeduaKaryawan', [DenahKeduaController::class, 'denahKaryawanKedua'])->name('karyawan.denahKaryawanKedua');
+    Route::get('/denahPertamaKaryawan/getDataPertama', [DenahPertamaController::class, 'getDataPertama']);
+    Route::get('/denahKeduaKaryawan/getData', [DenahKeduaController::class, 'getData']);
      
 });
 

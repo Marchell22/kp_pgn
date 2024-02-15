@@ -17,6 +17,13 @@ class DenahPertamaController extends Controller
         // Pass the data to the view
         return view('pegawai.denahPertama');
     }
+    public function denahKaryawanPertama()
+    {
+        // $denahFirstData = denahPertama::first();
+
+        // Pass the data to the view
+        return view('karyawan.denahKaryawanPertama');
+    }
     public function getDataPertama(Request $request)
     {
         $valueId = $request->input('valueId');

@@ -81,13 +81,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="" class="nav-link active ">
+                                    <a href="{{ route('admin.karyawan.indexKaryawan') }}" class="nav-link active ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">Overview</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.pegawai.denahPertama') }}" class="nav-link">
+                                    <a href="{{ route('admin.karyawan.denahKaryawanPertama') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG RECEIVER AREA</p>
                                     </a>
@@ -153,12 +153,12 @@
                     <a href=><b class="pig-launcher-area">SLUG LAUNCHER AREA </b></a>
                 </div>
                 <div class="terbanggi-station-besar-container">
-                    <a href=><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href=><b class="pig-launcher-area">PIG LAUNCHER AREA </b></a>
+                    <a href={{ route('admin.karyawan.denahKaryawanKedua') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
+                    <a href={{ route('admin.karyawan.denahKaryawanKedua') }}><b class="pig-launcher-area">PIG LAUNCHER AREA </b></a>
                 </div>
                 <div class="frame-div">
-                    <a href=><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href=><b class="pig-launcher-area">PIG RECEIVER AREA </b></a>
+                    <a href={{ route('admin.karyawan.denahKaryawanPertama') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
+                    <a href={{ route('admin.karyawan.denahKaryawanPertama') }}><b class="pig-launcher-area">PIG RECEIVER AREA </b></a>
                 </div>
                 <div class="terbanggi-station-besar-parent1">
                     <a href=><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
