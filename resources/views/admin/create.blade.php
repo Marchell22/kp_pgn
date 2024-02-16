@@ -48,8 +48,14 @@
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
-                <li class="nav-item d-none d-sm-inline-block">
+                {{-- <li class="nav-item d-none d-sm-inline-block">
                     <a href="{{ route('admin.index') }}" class="nav-link">Home</a>
+                </li> --}}
+                <li class="nav-item d-none d-sm-inline-block">
+                    <img src="{{ asset('img/pertamina.png') }}" alt="Gambar 1" style="margin-left:30px; ">
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <span style="display: flex; font-weight: bold; margin-top: 10px">Terbanggi Besar</span>
                 </li>
 
             </ul>
@@ -173,12 +179,11 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0"><a href="{{ route('admin.index') }}"> Akun</a></h1>
+                        <h1 class="m-0"> Akun</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Tambah </li>
+                            
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
