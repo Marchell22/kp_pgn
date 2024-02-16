@@ -105,9 +105,11 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-
+                    <img src="{{ asset('img/pertamina.png') }}" alt="Gambar 1" style="margin-left:30px; ">
                 </li>
-
+                <li class="nav-item d-none d-sm-inline-block">
+                    <span style="display: flex; font-weight: bold; margin-top: 10px">Terbanggi Besar</span>
+                </li>
             </ul>
 
         </nav>

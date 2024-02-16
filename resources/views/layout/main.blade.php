@@ -48,9 +48,18 @@
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
-                <li class="nav-item d-none d-sm-inline-block">
+                {{-- <li class="nav-item d-none d-sm-inline-block">
                     <a href="{{ route('admin.index') }}" class="nav-link">Home</a>
+                </li> --}}
+                <li class="nav-item d-none d-sm-inline-block">
+                    <img src="{{ asset('img/pertamina.png') }}" alt="Gambar 1" style="margin-left:30px; ">
                 </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <span style="display: flex; font-weight: bold; margin-top: 10px">Terbanggi Besar</span>
+                </li>
+                {{-- <li class="nav-item d-none d-sm-inline-block">
+                    <img src="{{ asset('img/pertamina.png') }}" alt="Gambar 1" style="margin-left:30px; ">
+                </li> --}}
 
             </ul>
         </nav>
@@ -169,13 +178,13 @@
         </aside>
 
         @yield('content')
-        <footer class="main-footer">
+        {{-- <footer class="main-footer">
             <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
-                <b>Version</b> 3.2.0
+
             </div>
-        </footer>
+        </footer> --}}
 
 
         <!-- Control Sidebar -->

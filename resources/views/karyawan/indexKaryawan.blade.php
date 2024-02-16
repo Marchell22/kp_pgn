@@ -37,6 +37,10 @@
     <!-- summernote -->
     <link rel="stylesheet" href="{{ asset('lte/plugins/summernote/summernote-bs4.min.css')}}">
 
+    <style>
+    
+</style>
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -49,7 +53,10 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="{{ route('admin.index') }}" class="nav-link"></a>
+                    <img src="{{ asset('img/pertamina.png') }}" alt="Gambar 1" style="margin-left:30px; ">
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <span style="display: flex; font-weight: bold; margin-top: 10px">Terbanggi Besar</span>
                 </li>
 
             </ul>
@@ -153,12 +160,16 @@
                     <a href=><b class="pig-launcher-area">SLUG LAUNCHER AREA </b></a>
                 </div>
                 <div class="terbanggi-station-besar-container">
-                    <a href={{ route('admin.karyawan.denahKaryawanKedua') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.karyawan.denahKaryawanKedua') }}><b class="pig-launcher-area">PIG LAUNCHER AREA </b></a>
+                    <a href={{ route('admin.karyawan.denahKaryawanKedua') }}><b
+                            class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
+                    <a href={{ route('admin.karyawan.denahKaryawanKedua') }}><b class="pig-launcher-area">PIG LAUNCHER
+                            AREA </b></a>
                 </div>
                 <div class="frame-div">
-                    <a href={{ route('admin.karyawan.denahKaryawanPertama') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.karyawan.denahKaryawanPertama') }}><b class="pig-launcher-area">PIG RECEIVER AREA </b></a>
+                    <a href={{ route('admin.karyawan.denahKaryawanPertama') }}><b
+                            class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
+                    <a href={{ route('admin.karyawan.denahKaryawanPertama') }}><b class="pig-launcher-area">PIG RECEIVER
+                            AREA </b></a>
                 </div>
                 <div class="terbanggi-station-besar-parent1">
                     <a href=><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
