@@ -158,12 +158,7 @@
                                         <p style="font-size: 13px;">SLUG CAUTCHER AREA CP1</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA</p>
-                                    </a>
-                                </li>
+
                                 <li class="nav-item">
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
@@ -174,6 +169,12 @@
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG LAUNCHER AREA CP1</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link active">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA CP2</p>
                                     </a>
                                 </li>
                             </ul>
@@ -232,13 +233,13 @@
                     <a href="" class="show-modal"onclick="showModal()"  data-value-id="11"><b class="bv-3019">35-BV-1303</b></a>
                 </div>
                 <div class="from-slug-catcher-35-v-2130-wrapper">
-                    <a href="" class="show-modal"onclick="showModal()"  data-value-id="12"><b class="from-pig-launcher-37-r-1020-container">
+                    <b class="from-pig-launcher-37-r-1020-container">
                             <span class="from-slug-catcher-35-v-2130-tx-container">
                                 <p class="from-slug">FROM SLUG</p>
                                 <p class="from-slug">CATCHER</p>
                                 <p class="from-slug">35-V-2130</p>
                             </span>
-                        </b></a>
+                        </b>
                 </div>
                 <div class="tp-3560-wrapper">
                     <a href="" class="show-modal"onclick="showModal()"  data-value-id="13"><b class="tp-3560">
@@ -257,39 +258,39 @@
                         </b></a>
                 </div>
                 <div class="to-slug-catcher-35-v2130-wrapper">
-                    <a href="" class="show-modal"onclick="showModal()"  data-value-id="15"><b class="from-pig-launcher-37-r-1020-container">
+                    <b class="from-pig-launcher-37-r-1020-container">
                             <span class="from-slug-catcher-35-v-2130-tx-container">
                                 <p class="from-slug">TO SLUG</p>
                                 <p class="from-slug">CATCHER</p>
                                 <p class="from-slug">35-V-2130</p>
                             </span>
-                        </b></a>
+                        </b>
                 </div>
                 <div class="from-pig-launcher-37-r-1020-wrapper">
-                    <a href="" class="show-modal"onclick="showModal()"  data-value-id="16"><b class="from-pig-launcher-37-r-1020-container">
+                    <b class="from-pig-launcher-37-r-1020-container">
                             <span class="from-slug-catcher-35-v-2130-tx-container">
                                 <p class="from-slug">FROM PIGLAUNCHER</p>
                                 <p class="from-slug">37-R-1020</p>
                             </span>
-                        </b></a>
+                        </b>
                 </div>
                 <div class="to-pig-receiver-35-r-1020-wrapper">
-                    <a href="" class="show-modal"onclick="showModal()"  data-value-id="17"><b class="from-pig-launcher-37-r-1020-container">
+                    <b class="from-pig-launcher-37-r-1020-container">
                             <span class="from-slug-catcher-35-v-2130-tx-container">
                                 <p class="from-slug">TO PIGRECEIVER</p>
                                 <p class="from-slug">35-R-1020</p>
                             </span>
-                        </b></a>
+                        </b>
                 </div>
                 <div class="future-connection-for-add-gas-wrapper">
-                    <a href="" class="show-modal"onclick="showModal()"  data-value-id="18"><b class="future-connection-for-add-container">
+                    <b class="future-connection-for-add-container">
                             <span class="from-slug-catcher-35-v-2130-tx-container">
                                 <p class="from-slug ">FUTURE</p>
                                 <p class="from-slug">CONNECTION</p>
                                 <p class="from-slug">FOR ADD GAS</p>
                                 <p class="from-slug">COMPROSSER</p>
                             </span>
-                        </b></a>
+                        </b>
                 </div>
                 <div class="gas-engine-generator-wrapper">
                     <a href="" class="show-modal"onclick="showModal()"  data-value-id="19"><b class="gas-engine-generator">

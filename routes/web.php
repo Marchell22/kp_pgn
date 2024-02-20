@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DenahKeduaController;
+use App\Http\Controllers\DenahKeempatController;
 use App\Http\Controllers\DenahPertamaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -44,6 +45,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:admi
     Route::post('/submitDenahKedua', [DenahKeduaController::class, 'submitDenahKedua'])->name('submitDenahKedua');
     Route::get('/denahPertama/getDataPertama', [DenahPertamaController::class, 'getDataPertama']);
     Route::get('/denahKedua/getData', [DenahKeduaController::class, 'getData']);
+    Route::get('/denahkeempat', [DenahKeempatController::class, 'indexDenahKeempat'])->name('pegawai.denahKeempat');
 });
 
 

@@ -112,12 +112,7 @@
                                         <p style="font-size: 13px;">SLUG CAUTCHER AREA CP1</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA</p>
-                                    </a>
-                                </li>
+                            
                                 <li class="nav-item">
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
@@ -128,6 +123,12 @@
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG LAUNCHER AREA CP1</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.pegawai.denahKeempat') }}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA CP2</p>
                                     </a>
                                 </li>
                             </ul>
