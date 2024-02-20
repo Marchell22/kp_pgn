@@ -376,6 +376,7 @@
                 
                 <form action="" method=''>
                     <input type="text" id="value_id_input" name="value_id" style="display: none;">
+                     <p id="modalValueText"style="font-weight: bold; margin-left : 300px"></p>
                     <table class="table table-bordered bordered" id="table" data-id="1">
                         <thead>
                             <tr>
@@ -450,6 +451,10 @@
             event.preventDefault(); // Menahan perilaku asli dari tautan
             var valueId = this.getAttribute('data-value-id');
             valueIdInput.value = valueId;
+            var labelText = this.querySelector('b').innerText;
+            // Tampilkan nilai di dalam modal
+            var modalValueText = document.getElementById('modalValueText');
+            modalValueText.textContent = labelText;
             // modal.style.display = 'block';
             $.ajax({
                 url: '/admin/denahPertamaKaryawan/getDataPertama', // Replace with the correct route

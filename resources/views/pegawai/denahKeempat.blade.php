@@ -233,6 +233,7 @@
                 
                
                     <input type="text" id="value_id_input" name="value_id" style="display: none;">
+                     <p id="modalValueText"style="font-weight: bold; margin-left : 300px"></p>
                     <table class="table table-bordered bordered" id="table" data-id="1">
                         <thead>
                             <tr>
