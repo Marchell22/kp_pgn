@@ -124,7 +124,7 @@
                                     </a>
                                 </li>
                                  <li class="nav-item">
-                                    <a href="{{ route('admin.pegawai.denahKeempat') }}" class="nav-link active">
+                                    <a href="{{ route('admin.karyawan.denahKaryawanKeempat') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG CATCHER AREA CP2</p>
                                     </a>
@@ -156,8 +156,8 @@
                     <a href=><b class="pig-launcher-area">PIG LAUNCHER AREA CP1</b></a>
                 </div>
                 <div class="terbanggi-station-besar-group">
-                    <a href={{ route('admin.pegawai.denahKeempat') }}{{ route('admin.pegawai.denahKeempat') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.pegawai.denahKeempat') }}><b class="pig-launcher-area">SLUG CATCHER AREA </b></a>
+                    <a href={{ route('admin.karyawan.denahKaryawanKeempat') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
+                    <a href={{ route('admin.karyawan.denahKaryawanKeempat') }}><b class="pig-launcher-area">SLUG CATCHER AREA </b></a>
                 </div>
                 <div class="terbanggi-station-besar-container">
                     <a href={{ route('admin.karyawan.denahKaryawanKedua') }}><b
