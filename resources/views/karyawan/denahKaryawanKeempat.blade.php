@@ -137,19 +137,19 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.pegawai.dashboard') }}" class="nav-link">
+                                    <a href="{{ route('admin.karyawan.indexKaryawan') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">Overview</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.pegawai.denahPertama') }}" class="nav-link">
+                                    <a href="{{ route('admin.karyawan.denahKaryawanPertama') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG RECEIVER AREA</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.pegawai.denahKedua') }}" class="nav-link">
+                                    <a href="{{ route('admin.karyawan.denahKaryawanKedua') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG LAUCHER AREA</p>
                                     </a>
@@ -173,7 +173,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.pegawai.denahKeempat') }}" class="nav-link active">
+                                    <a href="{{ route('admin.karyawan.denahKaryawanKeempat') }}" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG CATCHER AREA CP2</p>
                                     </a>
