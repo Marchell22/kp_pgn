@@ -55,6 +55,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:user
     Route::get('/denahKeduaKaryawan', [DenahKeduaController::class, 'denahKaryawanKedua'])->name('karyawan.denahKaryawanKedua');
     Route::get('/denahPertamaKaryawan/getDataPertama', [DenahPertamaController::class, 'getDataPertama']);
     Route::get('/denahKeduaKaryawan/getData', [DenahKeduaController::class, 'getData']);
+    Route::get('/denahKeempatKaryawan', [DenahKeempatController::class, 'denahKaryawanKeempat'])->name('karyawan.denahKaryawanKeempat');
      
 });
 
