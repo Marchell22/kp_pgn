@@ -152,21 +152,16 @@
                                 <li class="nav-item">
                                     <a href="{{ route('admin.karyawan.denahKaryawanKedua') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">PIG LAUCHER AREA</p>
+                                        <p style="font-size: 13px;">PIG LAUNCHER AREA</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG CAUTCHER AREA CP1</p>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA CP1</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA</p>
-                                    </a>
-                                </li>
+
                                 <li class="nav-item">
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
@@ -177,6 +172,12 @@
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG LAUNCHER AREA CP1</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link active">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA CP2</p>
                                     </a>
                                 </li>
                             </ul>
@@ -346,16 +347,13 @@
                             <p class="p">ATM</p>
                         </b></a>
                 </div>
+                
                 <div class="to-sump-tank-parent">
-                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="46"><b class="to-sump-tank">TO SUMP TANK</b><b class="v-2140">35-V-2140</b></a>
-                    
-                </div>
-                <div class="to-sump-tank-parent">
-                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="47"><b class="to-sump-tank">TO SUMP TANK</b><b class="v-2140">35-V-2140</b></a>
+                   <b class="to-sump-tank">TO SUMP TANK</b><b class="v-2140">35-V-2140</b>
                 </div>
                 <div class="to-pig-launcher-parent">
-                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="48"><b class="to-pig-launcher">TO PIG
-                            LAUNCHER</b><b class="l-1320">35-L-1320</b></a>
+                    <b class="to-pig-launcher">TO PIG
+                            LAUNCHER</b><b class="l-1320">35-L-1320</b>
                 </div>
                 <div class="plv-3010-wrapper">
                     <a href="" class="show-modal" onclick="showModal()"  data-value-id="49"><b class="plv-3006">35-PLV-3010</b></a>
@@ -367,8 +365,8 @@
                     <a href="" class="show-modal" onclick="showModal()"  data-value-id="51"><b class="plv-3009">35-SDV-1023</b></a>
                 </div>
                 <div class="from-pig-launcher-parent">
-                    <a href="" class="show-modal" onclick="showModal()"  data-value-id="52"><b class="from-pig-launcher">FROM PIG
-                            LAUNCHER</b><b class="l-13201">33-L-1320</b></a>
+                   <b class="from-pig-launcher">FROM PIG
+                            LAUNCHER</b><b class="l-13201">33-L-1320</b>
                 </div>
             </div>
         </div>

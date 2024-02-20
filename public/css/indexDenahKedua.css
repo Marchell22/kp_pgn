@@ -3,6 +3,7 @@
     text-decoration: none;
     /* Optional: menghapus garis bawah pada tautan */
 }
+
 .denahkedua-1-icon {
     position: absolute;
     top: 0;
@@ -168,8 +169,8 @@
     top: 418px;
     left: 436px;
     background-color: var(--color-lightsteelblue);
-    width: 59px;
-    height: 30px;
+    width: 62px;
+    height: 32px;
     overflow: hidden;
 }
 
@@ -210,7 +211,7 @@
     left: 422px;
     background-color: var(--color-lightsteelblue);
     width: 59px;
-    height: 30px;
+    height: 33px;
     overflow: hidden;
 }
 
@@ -230,20 +231,20 @@
     top: 252px;
     left: 83px;
     background-color: var(--color-lightsteelblue);
-    width: 59px;
-    height: 30px;
+    width: 60px;
+    height: 34px;
     overflow: hidden;
 }
 
 .to-pig-receiver-35-r-1020-wrapper {
-    top: 103px;
+    top: 102px;
     left: 1133px;
-    width: 84px;
+    width: 86px;
 }
 
 .future-connection-for-add-container {
     position: absolute;
-    top: 6px;
+    top: 7px;
     left: 9px;
     display: flex;
     align-items: center;

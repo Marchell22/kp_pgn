@@ -108,13 +108,7 @@
                                 <li class="nav-item">
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG CAUTCHER AREA CP1</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA</p>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA CP1</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -127,6 +121,12 @@
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG LAUNCHER AREA CP1</p>
+                                    </a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="" class="nav-link active">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA CP2</p>
                                     </a>
                                 </li>
                             </ul>
@@ -157,7 +157,7 @@
                 </div>
                 <div class="terbanggi-station-besar-group">
                     <a href=><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href=><b class="pig-launcher-area">SLUG LAUNCHER AREA </b></a>
+                    <a href=><b class="pig-launcher-area">SLUG CATCHER AREA </b></a>
                 </div>
                 <div class="terbanggi-station-besar-container">
                     <a href={{ route('admin.karyawan.denahKaryawanKedua') }}><b
