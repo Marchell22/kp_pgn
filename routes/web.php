@@ -46,6 +46,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:admi
     Route::get('/denahPertama/getDataPertama', [DenahPertamaController::class, 'getDataPertama']);
     Route::get('/denahKedua/getData', [DenahKeduaController::class, 'getData']);
     Route::get('/denahkeempat', [DenahKeempatController::class, 'indexDenahKeempat'])->name('pegawai.denahKeempat');
+    Route::post('/submitDenahKeempat', [DenahKeempatController::class, 'submitDenahKeempat'])->name('submitDenahKeempat');
+    Route::get('/denahKeempat/getDataKeempat', [DenahKeempatController::class, 'getDataKeempat']); 
 });
 
 
@@ -56,6 +58,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:user
     Route::get('/denahPertamaKaryawan/getDataPertama', [DenahPertamaController::class, 'getDataPertama']);
     Route::get('/denahKeduaKaryawan/getData', [DenahKeduaController::class, 'getData']);
     Route::get('/denahKeempatKaryawan', [DenahKeempatController::class, 'denahKaryawanKeempat'])->name('karyawan.denahKaryawanKeempat');
+    Route::get('/denahKeempatKaryawan/getDataKeempat', [DenahKeempatController::class, 'getDataKeempat']); 
+    
      
 });
 

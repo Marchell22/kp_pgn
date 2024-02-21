@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-roboto: Roboto;
+
+  /* font sizes */
+  --font-size-5xs: 8px;
+  --font-size-3xs: 10px;
+  --font-size-4xs: 9px;
+
+  /* Colors */
+  --color-silver-100: #c0c0c0;
+  --color-silver-200: #bfbfbf;
+  --color-black: #000;
+  --color-gold-100: #fbda04;
+  --color-gold-200: #fed702;
+  --color-lightsteelblue: #c2cfe3;
+  --color-white: #fff;
+
+  /* Paddings */
+  --padding-12xs: 1px;
+  --padding-10xs: 3px;
+}

@@ -21,10 +21,36 @@ class DenahKeempatController extends Controller
         // Pass the data to the view
         return view('karyawan.denahKaryawanKeempat');
     }
+    public function getDataKeempat(Request $request)
+    {
+        $valueId = $request->input('valueId');
+        // Replace 'DenahPertama' with your actual model class name
+        $data = denahKeempat::where('value_id', $valueId)->get();
 
-    /**
-     * Show the form for creating a new resource.
-     */
+        return response()->json($data);
+    }
+    public function submitDenahKeempat(Request $request)
+    {
+        $name = json_encode($request->name);
+        $value =json_encode($request->value);
+        $valueId = $request->input('value_id'); // Ambil data-value-id dari form
+
+
+        $in = [];
+        $in['name'] = $name;
+        $in['value'] = $value;
+        $in['value_id'] = $valueId;
+  
+        if ($denahFirstdData = denahKeempat::where('value_id', $valueId)->first()) {
+            $denahFirstdData->update($in);
+        } else {
+            // If it doesn't exist, create a new record
+            denahKeempat::create($in);
+        }
+        return redirect()->route('admin.pegawai.denahKeempat');
+    }
+
+    
     public function create()
     {
         //

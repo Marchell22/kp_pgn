@@ -177,7 +177,7 @@
                                 <li class="nav-item">
                                     <a href="{{ route('admin.pegawai.denahKeempat') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA CP2</p>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA CP2</p>
                                     </a>
                                 </li>
                             </ul>
