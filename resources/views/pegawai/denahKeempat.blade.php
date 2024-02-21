@@ -403,7 +403,7 @@
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal()">&times;</span>
-                <form action="{{ route('admin.submitDenahPertama') }}" method='post'>
+                <form action="{{ route('admin.submitDenahKeempat') }}" method='post'>
                     @csrf
                     <input type="text" id="value_id_input" name="value_id" style="display: none;">
                     <p id="modalValueText"style="font-weight: bold; margin-left : 300px"></p>
@@ -412,6 +412,7 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Value</th>
+                                <th><a href="javascript:void(0)" class="btn btn-success btn-sm addRow">+</a></th>
                             </tr>
                         </thead>
                         <tbody>
