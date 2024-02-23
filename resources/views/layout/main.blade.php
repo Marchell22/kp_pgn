@@ -78,8 +78,8 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-                        <li class="nav-item">
+                        with font-awesome or any other icon font library -->
+                        <li class="nav-item ">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-globe-asia"></i>
                                 <p>
@@ -107,14 +107,20 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKelima') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG CAUTCHER AREA CP1</p>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA CP1</p>
                                     </a>
                                 </li>
-                            
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKeempat') }}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.pegawai.denahKetiga') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG RECEIVER AREA CP1</p>
                                     </a>
@@ -122,15 +128,10 @@
                                 <li class="nav-item">
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA CP1</p>
+                                        <p style="font-size: 13px;">PIG LAUNCHER AREA CP1</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="{{ route('admin.pegawai.denahKeempat') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA CP2</p>
-                                    </a>
-                                </li>
+
                             </ul>
                         </li>
                         @if(auth()->user()->role=='admin')

@@ -8,8 +8,8 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A700" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700" />
-    <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/globalDenahKelima.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/indexDenahKelima.css') }}" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" />
 
     <!-- Google Font: Source Sans Pro -->
@@ -36,10 +36,63 @@
     <link rel="stylesheet" href="{{ asset('lte/plugins/daterangepicker/daterangepicker.css')}}">
     <!-- summernote -->
     <link rel="stylesheet" href="{{ asset('lte/plugins/summernote/summernote-bs4.min.css')}}">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" />
     <style>
-    
-</style>
+        /* Tambahkan CSS untuk styling modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Style untuk konten modal */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            /* Mengurangi margin agar modal lebih muncul di tengah */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-height: 80vh;
+            /* Menentukan tinggi maksimum modal sesuai dengan tinggi layar */
+            overflow-y: auto;
+            /* Menambahkan overflow-y agar dapat di-scroll jika kontennya lebih panjang */
+        }
+
+        /* Style untuk tombol close */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @media (min-width: 768px) {
+            .modal-content {
+                width: 50%;
+                /* Mengubah lebar modal pada layar yang lebih besar */
+                margin-left: 30%;
+            }
+        }
+
+        .hidden-input {
+            display: none;
+        }
+
+    </style>
 
 </head>
 
@@ -58,7 +111,6 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <span style="display: flex; font-weight: bold; margin-top: 10px">Terbanggi Besar</span>
                 </li>
-
             </ul>
 
         </nav>
@@ -76,8 +128,6 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
                         <li class="nav-item menu-open">
                             <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-globe-asia"></i>
@@ -88,49 +138,79 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.karyawan.indexKaryawan') }}" class="nav-link active ">
+                                    <a href="{{ route('admin.pegawai.dashboard') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">Overview</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.karyawan.denahKaryawanPertama') }}" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahPertama') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG RECEIVER AREA</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.karyawan.denahKaryawanKedua') }}" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKedua') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG LAUCHER AREA</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.karyawan.denahKaryawanKelima') }}" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKelima') }}" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG CATCHER AREA CP1</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.karyawan.denahKaryawanKeempat') }}" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKeempat') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG CATCHER AREA</p>
                                     </a>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.karyawan.denahKaryawanKetiga') }}" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKetiga') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG RECEIVER AREA CP1</p>
                                     </a>
                                 </li>
-                                 <li class="nav-item">
+                                <li class="nav-item">
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG LAUNCHER AREA CP1</p>
                                     </a>
                                 </li>
+
                             </ul>
                         </li>
+                        @if(auth()->user()->role=='admin')
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>
+                                    Akun
+                                    <i class="fas fa-angle-left right"></i>
+                                    {{-- <span class="badge badge-info right">6</span> --}}
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.index') }}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Kelola Akun</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.user.create') }}" class="nav-link ">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Tambah Akun</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        @endif
                         <li class="nav-item ">
                             <a href="{{ route('logout') }}" class="nav-link ">
                                 <i class="nav-icon fas fa-sign-out-alt"></i>
@@ -148,48 +228,58 @@
             <!-- /.sidebar -->
         </aside>
         <div class="content-wrapper">
-            <div class="overview-1-parent">
-                <img class="overview-1-icon" alt="" src="{{ asset('img/overview.png') }}" />
+            <div class="denahkelima-1-parent">
+                <img class="denahkelima-1-icon" alt="" src="{{ asset('img/denahKelima.png') }}" />
 
-                <div class="terbanggi-station-besar-parent">
-                    <a href=><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href=><b class="pig-launcher-area">PIG LAUNCHER AREA CP1</b></a>
+                <div class="bv-2162-wrapper">
+                    <b class="bv-2162">35-BV-2162</b>
                 </div>
-                <div class="terbanggi-station-besar-group">
-                    <a href={{ route('admin.karyawan.denahKaryawanKeempat') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.karyawan.denahKaryawanKeempat') }}><b class="pig-launcher-area">SLUG CATCHER AREA </b></a>
+                <div class="bv-2164-wrapper">
+                    <b class="bv-2164">35-BV-2164</b>
                 </div>
-                <div class="terbanggi-station-besar-container">
-                    <a href={{ route('admin.karyawan.denahKaryawanKedua') }}><b
-                            class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.karyawan.denahKaryawanKedua') }}><b class="pig-launcher-area">PIG LAUNCHER
-                            AREA </b></a>
+                <div class="ckv-2163-wrapper">
+                    <b class="bv-2162">35-CKV-2163</b>
                 </div>
-                <div class="frame-div">
-                    <a href={{ route('admin.karyawan.denahKaryawanPertama') }}><b
-                            class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.karyawan.denahKaryawanPertama') }}><b class="pig-launcher-area">PIG RECEIVER
-                            AREA </b></a>
+                <div class="bv-1065-wrapper">
+                    <b class="bv-1065">35-BV-1065</b>
                 </div>
-                <div class="terbanggi-station-besar-parent1">
-                    <a href={{ route('admin.karyawan.denahKaryawanKelima') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.karyawan.denahKaryawanKelima') }}><b class="slug-catcher-area">SLUG CATCHER AREA CP1</b></a>
+                <div class="pt-2120-wrapper">
+                    <b class="pt-2120">35-PT-2120</b>
                 </div>
-                <div class="terbanggi-station-besar-parent2">
-                    <a href={{ route('admin.karyawan.denahKaryawanKetiga') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.karyawan.denahKaryawanKetiga') }}><b class="slug-catcher-area">PIG RECEIVER AREA CP1 </b></a>
+                <div class="v-2120-wrapper">
+                    <b class="v-2120">35-V-2120</b>
+                </div>
+                <div class="bv-1366-wrapper">
+                    <b class="bv-1366">35-BV-1366</b>
+                </div>
+                <div class="bv-2107-wrapper">
+                    <b class="bv-2107">35-BV-2107</b>
+                </div>
+                <div class="lv-2120-wrapper">
+                    <b class="lv-2120">35-LV-2120</b>
+                </div>
+                <div class="ckv-2162-wrapper">
+                    <b class="ckv-2162">35-CKV-2162</b>
+                </div>
+                <div class="sdv-2171-wrapper">
+                    <b class="ckv-2162">35-SDV-2171</b>
+                </div>
+                <div class="plv-2162-wrapper">
+                    <b class="plv-2162">35-PLV-2162</b>
                 </div>
             </div>
         </div>
 
-        @yield('content')
-        <footer class="main-footer">
-            <strong>Copyright &copy; 2024 <a href="">by PGNCOM</a>.</strong>
-            <div class="float-right d-none d-sm-inline-block">
-            </div>
-        </footer>
+    </div>
 
-        <!-- /.control-sidebar -->
+    @yield('content')
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2024 <a href="">by PGNCOM</a>.</strong>
+        <div class="float-right d-none d-sm-inline-block">
+        </div>
+    </footer>
+
+    <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
 
@@ -205,7 +295,7 @@
     <!-- Bootstrap 4 -->
     <script src="{{ asset('lte/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <!-- ChartJS -->
-    <script src="{{ asset('lte/plugins/chart.js')}}/Chart.min.js')}}"></script>
+    <script src="{{ asset('lte/plugins/chart.js/Chart.min.js')}}"></script>
     <!-- Sparkline -->
     <script src="{{ asset('lte/plugins/sparklines/sparkline.js')}}"></script>
     <!-- JQVMap -->
@@ -228,6 +318,9 @@
     <script src="{{ asset ('lte/dist/js/demo.js')}}"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{ asset ('lte/dist/js/pages/dashboard.js')}}"></script>
+
+
+
 
 </body>
 

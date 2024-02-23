@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\DenahKeduaController;
 use App\Http\Controllers\DenahKeempatController;
+use App\Http\Controllers\DenahKelimaController;
+use App\Http\Controllers\DenahKetigaController;
 use App\Http\Controllers\DenahPertamaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -47,7 +49,9 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:admi
     Route::get('/denahKedua/getData', [DenahKeduaController::class, 'getData']);
     Route::get('/denahkeempat', [DenahKeempatController::class, 'indexDenahKeempat'])->name('pegawai.denahKeempat');
     Route::post('/submitDenahKeempat', [DenahKeempatController::class, 'submitDenahKeempat'])->name('submitDenahKeempat');
-    Route::get('/denahKeempat/getDataKeempat', [DenahKeempatController::class, 'getDataKeempat']); 
+    Route::get('/denahKeempat/getDataKeempat', [DenahKeempatController::class, 'getDataKeempat']);
+    Route::get('/denahKetiga', [DenahKetigaController::class, 'indexDenahKetiga'])->name('pegawai.denahKetiga'); 
+    Route::get('/denahKelima', [DenahKelimaController::class, 'indexDenahKelima'])->name('pegawai.denahKelima'); 
 });
 
 
@@ -58,7 +62,9 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:user
     Route::get('/denahPertamaKaryawan/getDataPertama', [DenahPertamaController::class, 'getDataPertama']);
     Route::get('/denahKeduaKaryawan/getData', [DenahKeduaController::class, 'getData']);
     Route::get('/denahKeempatKaryawan', [DenahKeempatController::class, 'denahKaryawanKeempat'])->name('karyawan.denahKaryawanKeempat');
-    Route::get('/denahKeempatKaryawan/getDataKeempat', [DenahKeempatController::class, 'getDataKeempat']); 
+    Route::get('/denahKeempatKaryawan/getDataKeempat', [DenahKeempatController::class, 'getDataKeempat']);
+    Route::get('/denahKetigaKaryawan', [DenahKetigaController::class, 'denahKaryawanKetiga'])->name('karyawan.denahKaryawanKetiga');
+    Route::get('/denahKelimaKaryawan', [DenahKelimaController::class, 'denahKaryawanKelima'])->name('karyawan.denahKaryawanKelima'); 
     
      
 });

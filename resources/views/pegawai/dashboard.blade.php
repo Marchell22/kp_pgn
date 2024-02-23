@@ -108,14 +108,19 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKelima') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG CAUTCHER AREA CP1</p>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA CP1</p>
                                     </a>
                                 </li>
-                                
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKeempat') }}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.pegawai.denahKetiga') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG RECEIVER AREA CP1</p>
                                     </a>
@@ -123,15 +128,10 @@
                                 <li class="nav-item">
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA CP1</p>
+                                        <p style="font-size: 13px;">PIG LAUNCHER AREA CP1</p>
                                     </a>
                                 </li>
-                                 <li class="nav-item">
-                                    <a href="{{ route('admin.pegawai.denahKeempat') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA CP2</p>
-                                    </a>
-                                </li>
+                                 
                             </ul>
                         </li>
                         @if(auth()->user()->role=='admin')
@@ -199,12 +199,12 @@
                     <a href={{ route('admin.pegawai.denahPertama') }}><b class="pig-launcher-area">PIG RECEIVER AREA </b></a>
                 </div>
                 <div class="terbanggi-station-besar-parent1">
-                    <a href={{ route('admin.pegawai.dashboard') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.pegawai.dashboard') }}><b class="slug-catcher-area">SLUG CATCHER AREA CP1</b></a>
+                    <a href={{ route('admin.pegawai.denahKelima') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
+                    <a href={{ route('admin.pegawai.denahKelima') }}><b class="slug-catcher-area">SLUG CATCHER AREA CP1</b></a>
                 </div>
                 <div class="terbanggi-station-besar-parent2">
-                    <a href={{ route('admin.pegawai.dashboard') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.pegawai.dashboard') }}><b class="slug-catcher-area">PIG RECEIVER AREA CP1 </b></a>
+                    <a href={{ route('admin.pegawai.denahKetiga') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
+                    <a href={{ route('admin.pegawai.denahKetiga') }}><b class="slug-catcher-area">PIG RECEIVER AREA CP1 </b></a>
                 </div>
             </div>
         </div>

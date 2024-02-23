@@ -105,14 +105,20 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKelima') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG CAUTCHER AREA CP1</p>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA CP1</p>
                                     </a>
                                 </li>
-                               
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKeempat') }}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.pegawai.denahKetiga') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG RECEIVER AREA CP1</p>
                                     </a>
@@ -120,17 +126,12 @@
                                 <li class="nav-item">
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA CP1</p>
+                                        <p style="font-size: 13px;">PIG LAUNCHER AREA CP1</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="{{ route('admin.pegawai.denahKeempat') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA CP1</p>
-                                    </a>
-                                </li>
+
                             </ul>
-                    </li>
+                        </li>
 
                     <li class="nav-item menu-open">
                         <a href="#" class="nav-link active">

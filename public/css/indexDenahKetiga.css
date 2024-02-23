@@ -1,0 +1,266 @@
+.pig-receiver-1 {
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: 1264.1px;
+    height: 513px;
+    object-fit: cover;
+}
+
+.zi-1061,
+.zi-1061-wrapper {
+    position: absolute;
+    top: 1px;
+    left: 32px;
+}
+
+.zi-1061-wrapper {
+    top: 137px;
+    left: 168px;
+    background-color: var(--color-silver);
+    width: 111px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.hcv-1072 {
+    position: absolute;
+    top: 7px;
+    left: 20px;
+}
+
+.hcv-1072-wrapper {
+    position: absolute;
+    top: 138px;
+    left: 443px;
+    background-color: var(--color-silver);
+    width: 111px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.zi-1062,
+.zi-1062-wrapper {
+    position: absolute;
+    top: 7px;
+    left: 25px;
+}
+
+.zi-1062-wrapper {
+    top: 140px;
+    left: 689px;
+    background-color: var(--color-silver);
+    width: 111px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.plv-1061 {
+    position: absolute;
+    top: 7px;
+    left: 50px;
+}
+
+.plv-1061-wrapper {
+    position: absolute;
+    top: 162px;
+    left: 841px;
+    background-color: var(--color-silver);
+    width: 111px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.bv-2161 {
+    position: absolute;
+    top: 7px;
+    left: 1px;
+}
+
+.bv-2161-wrapper,
+.plv-2161-wrapper {
+    position: absolute;
+    top: 160px;
+    left: 1022px;
+    background-color: var(--color-silver);
+    width: 111px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.plv-2161-wrapper {
+    top: 194px;
+}
+
+.plv-1461 {
+    position: absolute;
+    top: 7px;
+    left: 51px;
+}
+
+.plv-1461-wrapper {
+    position: absolute;
+    top: 54px;
+    left: 927px;
+    background-color: var(--color-silver);
+    width: 111px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.bv-1461,
+.bv-1461-wrapper {
+    position: absolute;
+    top: 12px;
+    left: 54px;
+}
+
+.bv-1461-wrapper {
+    top: 73px;
+    left: 927px;
+    background-color: var(--color-silver);
+    width: 111px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.r-1010,
+.r-1010-wrapper {
+    position: absolute;
+    top: 8px;
+    left: 37px;
+}
+
+.r-1010-wrapper {
+    top: 107px;
+    left: 943px;
+    background-color: #f2eb00;
+    width: 111px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.pt-1063,
+.pt-1063-wrapper {
+    position: absolute;
+    top: 14px;
+    left: 19px;
+}
+
+.pt-1063-wrapper {
+    top: 354px;
+    left: 810px;
+    background-color: var(--color-silver);
+    width: 80px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.sdv-10811 {
+    margin: 0;
+}
+
+.pt-1081,
+.sdv-1081 {
+    position: absolute;
+    top: 1px;
+    left: calc(50% - 30px);
+}
+
+.pt-1081 {
+    top: 10px;
+    left: calc(50% - 26px);
+}
+
+.sdv-1081-parent {
+    position: absolute;
+    top: 449px;
+    left: 970px;
+    background-color: var(--color-silver);
+    width: 80px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.v-2140,
+.v-2140-wrapper {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.v-2140-wrapper {
+    top: 320px;
+    left: 1131px;
+    background-color: #c0cfe2;
+    width: 63px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.pt-1061-wrapper,
+.pt-1062-wrapper,
+.tt-1061-wrapper {
+    position: absolute;
+    top: 354px;
+    left: 703px;
+    background-color: var(--color-silver);
+    width: 80px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.pt-1061-wrapper,
+.tt-1061-wrapper {
+    left: 596px;
+}
+
+.tt-1061-wrapper {
+    left: 489px;
+}
+
+.bv-1062,
+.bv-1062-wrapper {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+}
+
+.bv-1062-wrapper {
+    top: 298px;
+    left: 408px;
+    background-color: var(--color-silver);
+    width: 80px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.hcv-1071 {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+}
+
+.hcv-1071-wrapper,
+.pig-receiver-1-parent {
+    background-color: var(--color-silver);
+    overflow: hidden;
+}
+
+.hcv-1071-wrapper {
+    position: absolute;
+    top: 226px;
+    left: 200px;
+    width: 80px;
+    height: 26px;
+}
+
+.pig-receiver-1-parent {
+    width: 100%;
+    position: relative;
+    height: 622.4px;
+    text-align: center;
+    font-size: var(--font-size-3xs);
+    color: var(--color-black);
+    font-family: var(--font-roboto);
+}

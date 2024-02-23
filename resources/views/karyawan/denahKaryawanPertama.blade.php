@@ -152,32 +152,31 @@
                                 <li class="nav-item">
                                     <a href="{{ route('admin.karyawan.denahKaryawanKedua') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">PIG LAUNCHER AREA</p>
+                                        <p style="font-size: 13px;">PIG LAUCHER AREA</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{{ route('admin.karyawan.denahKaryawanKelima') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG CATCHER AREA CP1</p>
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">PIG RECEIVER AREA CP1</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG LAUNCHER AREA CP1</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="{{ route('admin.karyawan.denahKaryawanKeempat') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p style="font-size: 13px;">SLUG CATCHER AREA CP2</p>
+                                        <p style="font-size: 13px;">SLUG CATCHER AREA</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.karyawan.denahKaryawanKetiga') }}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p style="font-size: 13px;">PIG RECEIVER AREA CP1</p>
+                                    </a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p style="font-size: 13px;">PIG LAUNCHER AREA CP1</p>
                                     </a>
                                 </li>
                             </ul>
