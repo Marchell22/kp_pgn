@@ -173,7 +173,7 @@
                                     </a>
                                 </li>
                                  <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{{ route('admin.karyawan.denahKaryawanKeenam') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG LAUNCHER AREA CP1</p>
                                     </a>

@@ -46,14 +46,6 @@
         }
 
     </style>
-
-    <!-- =======================================================
-  * Template Name: Appland
-  * Updated: Jan 09 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -64,8 +56,7 @@
 
             <div class="logo">
                 <h1><a href="{{ url('/') }}"><img src={{ asset ('frontend/assets/img/pertamina.png') }}></a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
             </div>
 
             <nav id="navbar" class="navbar">
@@ -73,26 +64,6 @@
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     {{-- <li><a class="nav-link scrollto" href="#features">About</a></li> --}}
                     <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-                    {{--  <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-          <li><a class="nav-link scrollto" href="#faq">F.A.Q</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li> --}}
                     <li><a href="{{ route('login') }}" class="getstarted scrollto">Login</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -198,33 +169,6 @@
                 </div>
 
             </div>
-
-            {{-- <div class="container-fluid" data-aos="fade-up">
-                <div class="gallery-slider swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-1.jpg') }}"
-            class="gallery-lightbox" data-gall="gallery-carousel"><img
-                src="{{ asset ('frontend/assets/img/gallery/gallery-1.jpg') }}" class="img-fluid" alt=""
-                style="width: 500px; height: 300px;"></a></div>
-            <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-2.jpg') }}"
-                    class="gallery-lightbox" data-gall="gallery-carousel"><img
-                        src="{{ asset ('frontend/assets/img/gallery/gallery-2.jpg') }}" class="img-fluid" alt=""
-                        style="width: 300px; height: 300px;"></a></div>
-            <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-3.jpg') }}"
-                    class="gallery-lightbox" data-gall="gallery-carousel"><img
-                        src="{{ asset ('frontend/assets/img/gallery/gallery-3.jpg') }}" class="img-fluid" alt=""
-                        style="width: 300px; height: 300px;"></a></div>
-            <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-4.jpg') }}"
-                    class="gallery-lightbox" data-gall="gallery-carousel"><img
-                        src="{{ asset ('frontend/assets/img/gallery/gallery-4.jpg') }}" class="img-fluid" alt=""
-                        style="width: 300px; height: 300px;"></a></div>
-            <div class="swiper-slide"><a href="{{ asset ('frontend/assets/img/gallery/gallery-5.jpg') }}"
-                    class="gallery-lightbox" data-gall="gallery-carousel"><img
-                        src="{{ asset ('frontend/assets/img/gallery/gallery-5.jpg') }}" class="img-fluid" alt=""
-                        style="width: 300px; height: 300px;"></a></div>
-            </div>
-            <div class="swiper-pagination"></div>
-            </div> --}}
             <div class="slider">
                 <div class="list">
                     <div class="item">
@@ -278,19 +222,7 @@
                         Email:<br>
                     </p>
                 </div>
-                {{-- <div class="col-lg-3 col-md-8 footer-contact">
-                        <h3 style="font-weight: bold; font-size:24px; color : white">Jam Kerja</h3>
-                        <div class="data-row" style="font-weight: bold; font-size:18px; color : white">
-                            <div class="label">Senin - Kamis</div>
-                            <div class="colon">:</div>
-                            <div>07.30 - 16.00</div>
-                        </div>
-                        <div class="data-row" style="font-weight: bold; font-size:18px; color : white">
-                            <div class="label">Jumat</div>
-                            <div class="colon">:</div>
-                            <div>07.30 - 16.30</div>
-                        </div>
-                    </div> --}}
+
                 <div class="col-lg-3 col-md  footer-contact">
                     <h3 style="font-weight: bold; font-size:24px; color : white">Lokasi</h3>
                     <iframe
@@ -301,9 +233,7 @@
             </div>
         </div>
     </div>
-    {{-- <div class="footer-top " style="background-color: #446ce7;">
-            <p style="color: white">Copyright&copy 2023 PGN RO LAMPUNG</p>
-        </div> --}}
+
 
     <div class="text-center p-1" style="background-color: #446ce7;">
         <p style="color: white">Copyright&copy 2024 PGN RO LAMPUNG</p>

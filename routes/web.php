@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DenahKeduaController;
 use App\Http\Controllers\DenahKeempatController;
+use App\Http\Controllers\DenahKeenamController;
 use App\Http\Controllers\DenahKelimaController;
 use App\Http\Controllers\DenahKetigaController;
 use App\Http\Controllers\DenahPertamaController;
@@ -52,6 +53,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:admi
     Route::get('/denahKeempat/getDataKeempat', [DenahKeempatController::class, 'getDataKeempat']);
     Route::get('/denahKetiga', [DenahKetigaController::class, 'indexDenahKetiga'])->name('pegawai.denahKetiga'); 
     Route::get('/denahKelima', [DenahKelimaController::class, 'indexDenahKelima'])->name('pegawai.denahKelima'); 
+    Route::get('/denahKeenam', [DenahKeenamController::class, 'indexDenahKeenam'])->name('pegawai.denahKeenam'); 
 });
 
 
@@ -65,6 +67,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'cekRole:user
     Route::get('/denahKeempatKaryawan/getDataKeempat', [DenahKeempatController::class, 'getDataKeempat']);
     Route::get('/denahKetigaKaryawan', [DenahKetigaController::class, 'denahKaryawanKetiga'])->name('karyawan.denahKaryawanKetiga');
     Route::get('/denahKelimaKaryawan', [DenahKelimaController::class, 'denahKaryawanKelima'])->name('karyawan.denahKaryawanKelima'); 
+    Route::get('/denahKeenamKaryawan', [DenahKeenamController::class, 'denahKaryawanKeenam'])->name('karyawan.denahKaryawanKeenam'); 
     
      
 });

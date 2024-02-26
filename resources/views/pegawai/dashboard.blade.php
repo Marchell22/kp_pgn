@@ -126,7 +126,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="{{ route('admin.pegawai.denahKeenam') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG LAUNCHER AREA CP1</p>
                                     </a>
@@ -183,8 +183,8 @@
                 <img class="overview-1-icon" alt="" src="{{ asset('img/overview.png') }}" />
 
                 <div class="terbanggi-station-besar-parent">
-                    <a href={{ route('admin.pegawai.dashboard') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
-                    <a href={{ route('admin.pegawai.dashboard') }}><b class="pig-launcher-area">PIG LAUNCHER AREA CP1</b></a>
+                    <a href={{ route('admin.pegawai.denahKeenam') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>
+                    <a href={{ route('admin.pegawai.denahKeenam') }}><b class="pig-launcher-area">PIG LAUNCHER AREA CP1</b></a>
                 </div>
                 <div class="terbanggi-station-besar-group">
                     <a href={{ route('admin.pegawai.denahKeempat') }}><b class="terbanggi-station-besar">TERBANGGI STATION BESAR</b></a>

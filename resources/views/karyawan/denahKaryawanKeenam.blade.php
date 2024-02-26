@@ -8,8 +8,8 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A700" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700" />
-    <link rel="stylesheet" href="{{ asset('css/globalDenahKelima.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/indexDenahKelima.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/globalDenahKeenam.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/indexDenahKeenam.css') }}" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" />
 
     <!-- Google Font: Source Sans Pro -->
@@ -110,7 +110,6 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <span style="display: flex; font-weight: bold; margin-top: 10px">Terbanggi Besar</span>
                 </li>
-
             </ul>
 
         </nav>
@@ -156,7 +155,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.karyawan.denahKaryawanKelima') }}" class="nav-link active">
+                                    <a href="{{ route('admin.karyawan.denahKaryawanKelima') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">SLUG CATCHER AREA CP1</p>
                                     </a>
@@ -168,13 +167,13 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.karyawan.denahKaryawanKetiga') }}" class="nav-link ">
+                                    <a href="{{ route('admin.karyawan.denahKaryawanKetiga') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG RECEIVER AREA CP1</p>
                                     </a>
                                 </li>
                                  <li class="nav-item">
-                                    <a href="{{ route('admin.karyawan.denahKaryawanKeenam') }}" class="nav-link">
+                                    <a href="{{ route('admin.karyawan.denahKaryawanKeenam') }}" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p style="font-size: 13px;">PIG LAUNCHER AREA CP1</p>
                                     </a>
@@ -198,47 +197,80 @@
             <!-- /.sidebar -->
         </aside>
         <div class="content-wrapper">
-            <div class="denahkelima-1-parent">
-                <img class="denahkelima-1-icon" alt="" src="{{ asset('img/denahKelima.png') }}" />
-
-                <div class="bv-2162-wrapper">
-                    <b class="bv-2162">35-BV-2162</b>
+            <div class="pig-launcher-cp1">
+                <div class="pig-launcher-cp11">
+                  <div class="group-parent">
+                    <div class="denah-terakhir-1-parent">
+                      <img
+                        class="denah-terakhir-1" alt="" src="{{ asset('img/denahKeenam.png') }}"/>
+          
+                      <div class="plv-2172-wrapper">
+                        <b class="plv-2172">35-PLV-2172</b>
+                      </div>
+                      <div class="bv-2172-wrapper">
+                        <b class="plv-2172">35-BV-2172</b>
+                      </div>
+                      <div class="hcv-1393-wrapper">
+                        <b class="plv-2172">35-HCV-1393</b>
+                      </div>
+                      <div class="zi-1361-wrapper">
+                        <b class="plv-2172">35-ZI-1361</b>
+                      </div>
+                      <div class="hcv-1392-wrapper">
+                        <b class="plv-2172">35-HCV-1392</b>
+                      </div>
+                      <div class="pt-1361-wrapper">
+                        <b class="plv-2172">35-PT-1361</b>
+                      </div>
+                      <div class="pt-1361-container">
+                        <b class="pt-13611">35-HCV-1391</b>
+                      </div>
+                      <div class="bv-1064-wrapper">
+                        <b class="pt-13611">35-BV-1064</b>
+                      </div>
+                      <div class="pt-1361-frame">
+                        <b class="plv-2172">35-TT-1362</b>
+                      </div>
+                      <div class="frame-div">
+                        <b class="plv-2172">35-PLV-1471</b>
+                      </div>
+                      <div class="pt-1361-wrapper1">
+                        <b class="plv-2172">35-BV-1471</b>
+                      </div>
+                      <div class="zi-1362-wrapper">
+                        <b class="plv-2172">35-ZI-1362</b>
+                      </div>
+                      <div class="vector-parent">
+                        <img class="frame-child" alt="" src="{{ asset('img/vector-14.svg') }}" />
+          
+                        <div class="vector-group">
+                          <img class="frame-item" alt="" src="{{ asset('img/vector-5.svg') }}" />
+          
+                          <b class="to-slug-catcher-container">
+                            <p class="to-slug-catcher">TO SLUG CATCHER</p>
+                            <p class="to-slug-catcher">35-V-2130</p>
+                          </b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bv-1064-container">
+                      <b class="pt-13611">35-BV-1362</b>
+                    </div>
+                    <div class="bv-1064-frame">
+                      <b class="pt-13611">35-PLV-1361</b>
+                    </div>
+                    <div class="bv-1064-wrapper1">
+                      <b class="pt-13611">35-PLV-2171</b>
+                    </div>
+                    <div class="l-1310-wrapper">
+                      <b class="l-1310">35-L-1310</b>
+                    </div>
+                  </div>
                 </div>
-                <div class="bv-2164-wrapper">
-                    <b class="bv-2164">35-BV-2164</b>
-                </div>
-                <div class="ckv-2163-wrapper">
-                    <b class="bv-2162">35-CKV-2163</b>
-                </div>
-                <div class="bv-1065-wrapper">
-                    <b class="bv-1065">35-BV-1065</b>
-                </div>
-                <div class="pt-2120-wrapper">
-                    <b class="pt-2120">35-PT-2120</b>
-                </div>
-                <div class="v-2120-wrapper">
-                    <b class="v-2120">35-V-2120</b>
-                </div>
-                <div class="bv-1366-wrapper">
-                    <b class="bv-1366">35-BV-1366</b>
-                </div>
-                <div class="bv-2107-wrapper">
-                    <b class="bv-2107">35-BV-2107</b>
-                </div>
-                <div class="lv-2120-wrapper">
-                    <b class="lv-2120">35-LV-2120</b>
-                </div>
-                <div class="ckv-2162-wrapper">
-                    <b class="ckv-2162">35-CKV-2162</b>
-                </div>
-                <div class="sdv-2171-wrapper">
-                    <b class="ckv-2162">35-SDV-2171</b>
-                </div>
-                <div class="plv-2162-wrapper">
-                    <b class="plv-2162">35-PLV-2162</b>
-                </div>
+              </div>
             </div>
-        </div>  
+        </div>
+
 
         @yield('content')
         <footer class="main-footer">
@@ -286,7 +318,6 @@
     <script src="{{ asset ('lte/dist/js/demo.js')}}"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{ asset ('lte/dist/js/pages/dashboard.js')}}"></script>
-
 
 
 </body>
